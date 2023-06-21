@@ -416,7 +416,6 @@ class OutputFoodFragment : BaseFragment<ProcessViewModelApp, FragmentOutputFoodB
                             .load(data.rawUrl)
                             .into(binding.ivImage)
                     }
-                    //load image of processed image
 
                 }
             }

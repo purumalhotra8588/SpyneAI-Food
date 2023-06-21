@@ -75,11 +75,11 @@ object AppConstants {
     val OLA_ENTERPRISE_ID: String = "3HOBWP4KN"
     val ZOOMCAR_ENTERPRISE_ID: String = "P6LCAHA3Z"
 
-    var BASE_URL: String = "https://beta-api.spyne.xyz/"
-//    var BASE_URL: String = "https://www.clippr.ai/"
+//    var BASE_URL: String = "https://beta-api.spyne.xyz/"
+    var BASE_URL: String = "https://www.clippr.ai/"
 
-    var SIGNUP_URL : String = "https://console.spyne.xyz/register"
-//        var SIGNUP_URL : String = "https://console.spyne.ai/register"
+//    var SIGNUP_URL : String = "https://console.spyne.xyz/register"
+        var SIGNUP_URL : String = "https://console.spyne.ai/register"
     val STATUS_PROJECT_NAME: String = "STATUS_PROJECT_NAME"
     val SETTING_STATUS_GYRO: String = "STATUS_SETTING_GYRO"
     val SETTING_STATUS_GRID: String = "STATUS_SETTING_GRID"

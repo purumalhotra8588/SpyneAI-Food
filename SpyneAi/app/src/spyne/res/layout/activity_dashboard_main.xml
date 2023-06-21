@@ -18,7 +18,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvStartHere"
-           android:visibility="invisible"
+            android:visibility="invisible"
             android:layout_width="@dimen/dp_100"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"

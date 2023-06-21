@@ -13,7 +13,7 @@
         android:layout_height="36dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:src="@drawable/spyne_logo_ecom___home_page"
+        android:src="@drawable/spyne_logo_ecom___home_page_2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

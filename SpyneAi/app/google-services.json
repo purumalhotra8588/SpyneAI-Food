@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1014760930141",
-    "project_id": "spyneai-ecom",
-    "storage_bucket": "spyneai-ecom.appspot.com"
+    "project_number": "900554982411",
+    "project_id": "spyneai-food",
+    "storage_bucket": "spyneai-food.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1014760930141:android:30cbea57efcea2799586b4",
+        "mobilesdk_app_id": "1:900554982411:android:27e213574ff9108fbe730e",
         "android_client_info": {
-          "package_name": "com.spyneai.ecommerce"
+          "package_name": "com.spyneai.food"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1014760930141-e1s5lnt6j6egskoeptureggh3b4v101b.apps.googleusercontent.com",
+          "client_id": "900554982411-bmbcusmas33vsrv4qpn2ror74nvi6uhr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCDootwbIaTpOzDmSdn-pi3j5k52iwjln4"
+          "current_key": "AIzaSyD3euRzInucZ85oIonnehQ5P1v22GreZbc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1014760930141-e1s5lnt6j6egskoeptureggh3b4v101b.apps.googleusercontent.com",
+              "client_id": "900554982411-bmbcusmas33vsrv4qpn2ror74nvi6uhr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -36,27 +36,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1014760930141:android:8ecb1cc4276261289586b4",
+        "mobilesdk_app_id": "1:900554982411:android:c0fdf5949f7fe042be730e",
         "android_client_info": {
-          "package_name": "com.spyneai.ecommerce.debug"
+          "package_name": "com.spyneai.food.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1014760930141-e1s5lnt6j6egskoeptureggh3b4v101b.apps.googleusercontent.com",
+          "client_id": "900554982411-bmbcusmas33vsrv4qpn2ror74nvi6uhr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCDootwbIaTpOzDmSdn-pi3j5k52iwjln4"
+          "current_key": "AIzaSyD3euRzInucZ85oIonnehQ5P1v22GreZbc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1014760930141-e1s5lnt6j6egskoeptureggh3b4v101b.apps.googleusercontent.com",
+              "client_id": "900554982411-bmbcusmas33vsrv4qpn2ror74nvi6uhr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

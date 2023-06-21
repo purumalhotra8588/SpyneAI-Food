@@ -19,7 +19,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.spyneai.ecommerce"
+        applicationId "com.spyneai.food"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 48
@@ -80,9 +80,9 @@ android {
 
         spyne {
             dimension 'version'
-            applicationId "com.spyneai.ecommerce"
-            versionCode 3
-            versionName "1.0.2"
+            applicationId "com.spyneai.food"
+            versionCode 1
+            versionName "1.0.0"
         }
 
 

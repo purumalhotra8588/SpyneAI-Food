@@ -7,10 +7,10 @@
         android:title="@string/home"
         android:icon="@drawable/ic_home" />
 
-<!--    <item-->
-<!--        android:id="@+id/wallet"-->
-<!--        android:title="@string/wallet"-->
-<!--        android:icon="@drawable/ic_wallet"></item>-->
+    <!--    <item-->
+    <!--        android:id="@+id/wallet"-->
+    <!--        android:title="@string/wallet"-->
+    <!--        android:icon="@drawable/ic_wallet"></item>-->
 
     <item
         android:id="@+id/placeholder"
@@ -22,14 +22,14 @@
         android:icon="@drawable/ic_orders"></item>
 
 
-<!--    <item-->
-<!--        android:id="@+id/logoutDashBoardFragment"-->
-<!--        android:title="@string/profile"-->
-<!--        android:icon="@drawable/profile"></item>-->
+    <!--    <item-->
+    <!--        android:id="@+id/logoutDashBoardFragment"-->
+    <!--        android:title="@string/profile"-->
+    <!--        android:icon="@drawable/profile"></item>-->
 
-<!--    <item-->
-<!--        android:id="@+id/cartFragment"-->
-<!--        android:title="@string/cart"-->
-<!--        android:icon="@drawable/cart"></item>-->
+    <!--    <item-->
+    <!--        android:id="@+id/cartFragment"-->
+    <!--        android:title="@string/cart"-->
+    <!--        android:icon="@drawable/cart"></item>-->
 
 </menu>

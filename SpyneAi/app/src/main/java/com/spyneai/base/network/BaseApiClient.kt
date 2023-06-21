@@ -2,10 +2,6 @@ package com.spyneai.base.network
 
 
 //
-//import com.chuckerteam.chucker.api.ChuckerCollector
-//import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.chuckerteam.chucker.api.ChuckerCollector
-import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.spyneai.BuildConfig
 import com.spyneai.app.BaseApplication
 import okhttp3.OkHttpClient
@@ -34,14 +30,14 @@ open class BaseApiClient<Api>(val BASE_URL: String, api: Class<Api>) {
             }
                 .addInterceptor(RequestInterceptor())
                 .addInterceptor(ResponseInterceptor())
-                .addInterceptor(
-                    ChuckerInterceptor.Builder(BaseApplication.getContext())
-                        .collector(ChuckerCollector(BaseApplication.getContext()))
-                        .maxContentLength(250000L)
-                        .redactHeaders(emptySet())
-                        .alwaysReadResponseBody(false)
-                        .build()
-                )
+//                .addInterceptor(
+//                    ChuckerInterceptor.Builder(BaseApplication.getContext())
+//                        .collector(ChuckerCollector(BaseApplication.getContext()))
+//                        .maxContentLength(250000L)
+//                        .redactHeaders(emptySet())
+//                        .alwaysReadResponseBody(false)
+//                        .build()
+//                )
                 .readTimeout(5, TimeUnit.MINUTES)
                 .writeTimeout(5, TimeUnit.MINUTES)
                 .connectTimeout(5, TimeUnit.MINUTES)

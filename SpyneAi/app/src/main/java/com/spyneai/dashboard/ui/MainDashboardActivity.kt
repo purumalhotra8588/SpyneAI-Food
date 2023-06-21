@@ -73,8 +73,8 @@ class MainDashboardActivity : BaseActivity() {
         draftViewModel = ViewModelProvider(this).get(DraftViewModel::class.java)
         appUpdateManager = AppUpdateManagerFactory.create(this)
 
-       // firstFragment = HomeV2Fragment()
-       // myOrdersFragment = MyOrdersFragment()
+        // firstFragment = HomeV2Fragment()
+        // myOrdersFragment = MyOrdersFragment()
 
         viewModel?.refreshProjectData?.observe(this) {
             it?.let { myOrderViewModel.refreshProjectData.value = it }
@@ -104,7 +104,7 @@ class MainDashboardActivity : BaseActivity() {
         }
 
         binding.bottomNavigation.background = null
-        
+
 
         viewModel!!.startHereVisible.observe(this) {
             if (it) {
@@ -239,7 +239,7 @@ class MainDashboardActivity : BaseActivity() {
 
 
         Log.d(TAG, "onCreate: $tab_id")
-        
+
         if (tab_id == "1") {
             binding.bottomNavigation.selectedItemId = R.id.completedOrdersFragment
             binding.fab.isClickable = true
