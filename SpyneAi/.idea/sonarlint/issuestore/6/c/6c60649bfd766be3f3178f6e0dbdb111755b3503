@@ -1,0 +1,18 @@
+
+Fkotlin:S108Ü")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Pkotlin:S1172Õ"7Use "_" instead of this unused lambda parameter "view".(éÍËµ
+Pkotlin:S1172Ä"7Use "_" instead of this unused lambda parameter "view".(éÍËµ
+mkotlin:S6306ò"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+rkotlin:S6306”"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(š£Œúÿÿÿÿ
+rkotlin:S6306™"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+mkotlin:S6306"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+rkotlin:S6306‹"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+pkotlin:S3776"RRefactor this method to reduce its Cognitive Complexity from 49 to the 15 allowed.(Ä†ä‘øÿÿÿÿ
+5kotlin:S6310ò"Avoid hardcoded dispatchers.(á¥ €
+:kotlin:S6310™"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+5kotlin:S6310"Avoid hardcoded dispatchers.(á¥ €
+:kotlin:S6310‹"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+Nkotlin:S1144›"0Remove this unused private "setTagsData" method.(€ş«ûúÿÿÿÿ
+Pkotlin:S1144æ"2Remove this unused private "createProject" method.(±”¿¥úÿÿÿÿ
+xkotlin:S1186É"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¼”šâüÿÿÿÿ
+skotlin:S1186Ñ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã

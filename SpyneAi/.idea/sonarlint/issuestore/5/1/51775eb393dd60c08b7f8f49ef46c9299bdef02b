@@ -1,0 +1,26 @@
+
+skotlin:S6306A"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ñ“Í£Ï0
+tkotlin:S6306Í"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ñ“Í£Ï0
+tkotlin:S6306Û"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ñ“Í£Ï0
+skotlin:S6306:"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ñ“Í£Ï0
+ykotlin:S6306å"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8ñ“Í£Ï0
+Bkotlin:S1874M"#Deprecated code should not be used.(’©Ê8÷“Í£Ï0
+Gkotlin:S1874N"#Deprecated code should not be used.(øÒÁûÿÿÿÿ8÷“Í£Ï0
+Ckotlin:S1874‰"#Deprecated code should not be used.(­‰¼½8÷“Í£Ï0
+Ckotlin:S1874"#Deprecated code should not be used.(Ü˜ëµ8÷“Í£Ï0
+Gkotlin:S1874"#Deprecated code should not be used.(üšÏØøÿÿÿÿ8÷“Í£Ï0
+Bkotlin:S1874""#Deprecated code should not be used.(Ã¡™æ8ø“Í£Ï0
+Bkotlin:S1874""#Deprecated code should not be used.(Ã¡™æ8ø“Í£Ï0
+Bkotlin:S1874#"#Deprecated code should not be used.(Ò¢Ì®8ø“Í£Ï0
+Bkotlin:S1874#"#Deprecated code should not be used.(Ò¢Ì®8ø“Í£Ï0
+Bkotlin:S18740"#Deprecated code should not be used.(ƒ‰¼Ã8ø“Í£Ï0
+Gkotlin:S1874T"#Deprecated code should not be used.(Ï“§µüÿÿÿÿ8ø“Í£Ï0
+Gkotlin:S1874T"#Deprecated code should not be used.(Ï“§µüÿÿÿÿ8ø“Í£Ï0
+vkotlin:S37762"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¶Á»¬şÿÿÿÿ8ù“Í£Ï0
+;kotlin:S6310A"Avoid hardcoded dispatchers.(á¥ €8ú“Í£Ï0
+<kotlin:S6310Í"Avoid hardcoded dispatchers.(á¥ €8ú“Í£Ï0
+<kotlin:S6310Û"Avoid hardcoded dispatchers.(á¥ €8ú“Í£Ï0
+;kotlin:S6310:"Avoid hardcoded dispatchers.(á¥ €8ú“Í£Ï0
+Akotlin:S6310å"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8ú“Í£Ï0
+rkotlin:S1186¤"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ƒ½¿k
+kotlin:S1186Â"ZAdd a nested comment explaining why this function is empty or complete the implementation.(–ºÄøÿÿÿÿ8ü“Í£Ï0

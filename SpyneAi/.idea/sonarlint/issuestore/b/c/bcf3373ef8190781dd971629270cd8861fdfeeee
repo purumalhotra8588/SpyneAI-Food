@@ -1,0 +1,4 @@
+
+lkotlin:S6306H"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(‘Â¿¹
+kkotlin:S3776¬"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(‚ÇÀˆ
+4kotlin:S6310H"Avoid hardcoded dispatchers.(‘Â¿¹

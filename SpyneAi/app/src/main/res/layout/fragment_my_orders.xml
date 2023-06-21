@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orders.ui.MyOrdersActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/primary_light"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/bg_toolbar"
+            app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/back"
+        android:padding="@dimen/dp_15"
+        app:tint="@color/white"
+        android:id="@+id/backButton"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tittle"
+        android:layout_gravity="center"
+        android:text="@string/my_projcts"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:background="@color/white"
+        android:id="@+id/fl_tool_bar">
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/tool_bar_height"-->
+<!--            android:layout_height="@dimen/tool_bar_height"-->
+<!--            android:src="@drawable/back"-->
+<!--            android:padding="@dimen/dp_15"-->
+<!--            app:tint="@color/black"-->
+<!--            android:id="@+id/iv_back" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/tv_tittle"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/my_projcts"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:textColor="@color/primary"-->
+<!--            android:textSize="16sp"/>-->
+
+
+        <LinearLayout
+            android:id="@+id/llFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingVertical="@dimen/dp_7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:src="@drawable/filter" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cvGrid"
+        app:tabTextAppearance="@style/CustomTextAppearance"/>
+    
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvGrid"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:cardCornerRadius="@dimen/dp_5"
+        android:layout_marginHorizontal="@dimen/dp_12"
+        app:layout_constraintRight_toLeftOf="@id/cvLinear"
+        app:layout_constraintLeft_toRightOf="@+id/tab_layout"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tab_layout"
+        android:backgroundTint="#EBEBEB">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/grid_button"
+            android:padding="@dimen/dp_5"
+            >
+
+        </ImageView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLinear"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:cardCornerRadius="@dimen/dp_5"
+        android:backgroundTint="#EBEBEB"
+        android:layout_marginRight="@dimen/dp_13"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cvGrid"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tab_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/linear_button"
+            android:padding="@dimen/dp_5">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/llReshootRequest"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_15"
+        android:background="@drawable/bg_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Reshoot Request"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/view_pager"
+        app:layout_constraintTop_toBottomOf="@+id/llReshootRequest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/flSort"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/fl_tool_bar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_5">
+
+
+        <LinearLayout
+            android:id="@+id/llSort"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/dp_5"
+                android:background="@color/light_grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/dp_7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="@dimen/sp_12"
+                        android:layout_weight="1"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/ivCategory"
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_10"
+                        android:src="@drawable/drop_arrow" />
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/cbAutomobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:text="Automobile" />
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/cbFabric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:text="Fabric" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llImageRating"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="@dimen/dp_5"
+                android:layout_marginHorizontal="@dimen/dp_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvImageRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Image Rating" />
+
+                <ImageView
+                    android:id="@+id/ivImageRating"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:src="@drawable/tic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAiScore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="@dimen/dp_5"
+                android:layout_marginHorizontal="@dimen/dp_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAiScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="AI Score" />
+
+                <ImageView
+                    android:id="@+id/ivAiScore"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:src="@drawable/tic" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="@dimen/dp_5"
+                android:layout_marginHorizontal="@dimen/dp_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Date" />
+
+                <ImageView
+                    android:id="@+id/ivDate"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:src="@drawable/tic" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llAlphabet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginHorizontal="@dimen/dp_7"
+                android:gravity="center_vertical"
+                android:layout_marginVertical="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAlphabet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Alphabetical" />
+
+                <ImageView
+                    android:id="@+id/ivAlphabet"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:src="@drawable/tic" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

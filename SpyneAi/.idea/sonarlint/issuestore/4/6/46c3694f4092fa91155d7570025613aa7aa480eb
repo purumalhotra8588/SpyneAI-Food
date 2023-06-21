@@ -1,0 +1,8 @@
+
+lkotlin:S6306j"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+mkotlin:S6306"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306m"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+Tkotlin:S1481'"7Remove this unused "lastSelectedAngles" local variable.(Ğ‡†ªúÿÿÿÿ
+4kotlin:S6310j"Avoid hardcoded dispatchers.(á¥ €
+5kotlin:S6310"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310m"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ

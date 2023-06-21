@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient"
+    tools:context=".registration.view.ui.activity.RegistrationBaseActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/registration_base_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="190dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/tvCreateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_selected_user" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/sign_up_bg"
+        tools:context=".registration.view.ui.fragment.signup.RegistrationFragment">
+
+        <TextView
+            android:id="@+id/tvCreateYour"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="@dimen/dp_30"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/validate_phone"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_radio_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_35"
+            android:layout_marginEnd="@dimen/dp_35"
+            android:padding="@dimen/dp_2"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreateYour">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rb_as_individual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D9D9D9"
+                        android:buttonTint="#5465FF"
+                        android:checked="true"
+                        android:text="@string/rb_text_as_individual" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rb_as_standard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#D9D9D9"
+                        android:buttonTint="#5465FF"
+                        android:text="@string/rb_text_as_standard" />
+
+                    <ImageView
+                        android:id="@+id/iv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/rb_as_standard"
+                        android:src="@drawable/ic_info_14_14" />
+                </RelativeLayout>
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container_showing_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_radio_button_container"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+            <RelativeLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/bg_signup_edit_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber">
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/tvCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_enableHint="false"
+                    app:ccp_countryPreference="IN,US"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_7"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingVertical="@dimen/sp_10"
+                    android:text="@string/india_country_code"
+                    android:textColor="@color/edit_text_hint"
+                    app:ccp_defaultNameCode="IN"
+                    app:ccp_enablePhoneAutoFormatter="false"
+                    app:ccp_hideNameCode="true"
+                    app:ccp_textFont="@font/poppins_medium"
+                    app:ccp_textSize="@dimen/sp_12" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_7"
+                    android:layout_toRightOf="@+id/tvCountryCode"
+                    android:background="@color/line_view" />
+
+                <EditText
+                    android:id="@+id/edt_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/sp_16"
+                    android:layout_toRightOf="@+id/view"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="@string/enter_phone_number"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="@dimen/sp_12" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSentOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/bg_secondary_button"
+            android:backgroundTint="@color/primary_light_dark"
+            android:clickable="false"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/send_otp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:backgroundTint="@null"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_container_showing_option" />
+
+        <TextView
+            android:id="@+id/tvValiate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btSentOtp" />
+
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/skip"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvValiate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

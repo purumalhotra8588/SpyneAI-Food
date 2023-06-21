@@ -1,0 +1,16 @@
+
+Fkotlin:S108 ")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108Š")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+=kotlin:S1481G"&Remove this unused "s" local variable.(Í´íx
+qkotlin:S1192š"XDefine a constant instead of duplicating this literal "Please enter valid OTP!" 3 times.(ØÑ–¿
+<kotlin:S1874¢"#Deprecated code should not be used.(‚´Ã¬
+<kotlin:S1874Ø"#Deprecated code should not be used.(£²Í
+okotlin:S3776v"RRefactor this method to reduce its Cognitive Complexity from 86 to the 15 allowed.(Õáõÿÿÿÿÿ
+xkotlin:S1186Û"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ƒ¶Âşÿÿÿÿ
+skotlin:S1186„"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+skotlin:S1186œ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+skotlin:S1186·"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+skotlin:S1186Ò"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+skotlin:S1186ê"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+skotlin:S1186ƒ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+Lkotlin:S1066¤".Merge this "if" statement with the nested one.(§ÉÑ ùÿÿÿÿ

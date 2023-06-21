@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_30"
+    android:paddingRight="@dimen/dp_30"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/few_more_details"
+        android:textColor="#484848"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_18"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etBusinessName"
+        android:background="@drawable/bg_onboarding_et"
+        android:padding="@dimen/dp_10"
+        android:hint="@string/business_name"
+        android:textSize="@dimen/sp_16"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textColorHint="@color/onboarding_hint"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:id="@+id/llSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_onboarding_et"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/counties_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/countryProgressBar"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etReferral"
+        android:background="@drawable/bg_onboarding_et"
+        android:padding="@dimen/dp_10"
+        android:hint="@string/enter_coupon_code"
+        android:textSize="@dimen/sp_16"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColorHint="@color/onboarding_hint"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:elevation="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_50"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_secondary_button"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:id="@+id/tvSkip"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_30"
+        android:textColor="#A7A7A7"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_14"
+        android:paddingRight="@dimen/dp_30"/>
+
+
+</LinearLayout>

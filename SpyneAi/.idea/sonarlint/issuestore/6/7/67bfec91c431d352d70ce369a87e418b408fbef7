@@ -1,0 +1,8 @@
+
+@kotlin:S108`")Either remove or fill this block of code.(å¥‡
+Fkotlin:S108·")Either remove or fill this block of code.(ÍÖ¥ºÿÿÿÿÿ
+mkotlin:S6306€"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+rkotlin:S6306—"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+jkotlin:S3776!"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(ëü«
+5kotlin:S6310€"Avoid hardcoded dispatchers.(á¥ €
+:kotlin:S6310—"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ

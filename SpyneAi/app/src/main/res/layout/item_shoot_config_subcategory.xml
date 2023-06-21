@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="@dimen/dp_8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivSubcat"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        app:riv_corner_radius="@dimen/dp_10"
+        android:scaleType="fitCenter"
+        android:padding="1.5dp"
+        android:background="@drawable/bg_sub_category"
+        android:src="@mipmap/defaults"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSubCat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_7"
+        tools:text="Sedan"
+        android:textSize="@dimen/sp_11"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/ivSubcat"
+        app:layout_constraintLeft_toLeftOf="@+id/ivSubcat"
+        app:layout_constraintRight_toRightOf="@+id/ivSubcat"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

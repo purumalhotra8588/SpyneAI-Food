@@ -1,0 +1,11 @@
+
+qkotlin:S6306f"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(š£Œúÿÿÿÿ
+qkotlin:S6306j"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+skotlin:S63062"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8ˆêÎÌ­0
+xkotlin:S63068"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8ˆêÎÌ­0
+2kotlin:S1128"Remove this unused import.(”š§€
+7kotlin:S1128"Remove this unused import.(¤œ©Äşÿÿÿÿ
+9kotlin:S6310j"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+;kotlin:S63102"Avoid hardcoded dispatchers.(á¥ €8—êÎÌ­0
+@kotlin:S63108"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8™êÎÌ­0
+Mkotlin:S1144H".Remove this unused private "createSku" method.(ƒğ½Ä8›êÎÌ­0

@@ -1,0 +1,29 @@
+
+lkotlin:S63067"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+mkotlin:S6306Ì"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+mkotlin:S6306°"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+mkotlin:S6306œ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306C"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+rkotlin:S6306µ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+rkotlin:S6306Ö"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+rkotlin:S6306à"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+lkotlin:S6306T"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306y"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+rkotlin:S6306¡"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+qkotlin:S6306k"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+>kotlin:S1481˜"&Remove this unused "s" local variable.(Í´íx
+jkotlin:S37762"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(Î¦ºö
+:kotlin:S6310ö"Avoid hardcoded dispatchers.(Óé‹øÿÿÿÿ
+4kotlin:S63107"Avoid hardcoded dispatchers.(á¥ €
+5kotlin:S6310Ì"Avoid hardcoded dispatchers.(á¥ €
+5kotlin:S6310°"Avoid hardcoded dispatchers.(á¥ €
+5kotlin:S6310œ"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310C"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+:kotlin:S6310µ"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+:kotlin:S6310Ö"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+:kotlin:S6310à"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+4kotlin:S6310T"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310y"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+:kotlin:S6310¡"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+9kotlin:S6310k"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+ekotlin:S6313û"EClasses extending "ViewModel" should not expose suspending functions.(õ»®8íµ¬Ñ³0

@@ -1,0 +1,75 @@
+
+g	java:S112c"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±¦·‚0
+q	java:S116Í"URename this field "IMAGE_MEAN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğé„8µ¦·‚0
+q	java:S116Ï"TRename this field "IMAGE_STD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‡­•8µ¦·‚0
+r	java:S116Ò"URename this field "INPUT_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×´ ó8µ¦·‚0
+w	java:S116×"URename this field "output_box" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âíõ¥úÿÿÿÿ8¶¦·‚0
+q	java:S116ù"TRename this field "inp_scale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†»ÍÖ8¶¦·‚0
+{	java:S116ú"YRename this field "inp_zero_point" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´Ò¯‡üÿÿÿÿ8¶¦·‚0
+q	java:S116û"TRename this field "oup_scale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä—€â8¶¦·‚0
+{	java:S116ü"YRename this field "oup_zero_point" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìıº¶øÿÿÿÿ8¶¦·‚0
+>
+java:S1170Í"!Make this final field static too.(Ğé„8¶¦·‚0
+?
+java:S1170Ï"!Make this final field static too.(Š‡­•8¶¦·‚0
+¤
+java:S1186Œ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«­§ùûÿÿÿÿ8¶¦·‚0
+ˆ
+java:S1149ò"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ô£é­ûÿÿÿÿ8»¦·‚0
+X	java:S125S"<This block of commented-out lines of code should be removed.(ê´Ç…8Â¦·‚0
+X	java:S125t"<This block of commented-out lines of code should be removed.(Œš…ï8È¦·‚0
+X
+java:S1874¤"5Remove this use of "setNumThreads"; it is deprecated.(±ÈÍÿÿÿÿÿ8Ë¦·‚0
+^	java:S125©"<This block of commented-out lines of code should be removed.(¢âå„øÿÿÿÿ8Ì¦·‚0
+^	java:S125Ê"<This block of commented-out lines of code should be removed.(‡ä½‰úÿÿÿÿ8›şÕ‚0
+^	java:S125Ô"<This block of commented-out lines of code should be removed.(è“Ô¡ÿÿÿÿÿ8Ï¦·‚0
+p
+java:S3776‚"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÙÔöó8Ğ¦·‚0
+Y	java:S125×"<This block of commented-out lines of code should be removed.(çùÛĞ8Õ¦·‚0
+H
+java:S1481Û"*Remove this unused "pixel" local variable.(ŸñÆÏ8Õ¦·‚0
+u
+java:S3776ğ"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¡µŸœûÿÿÿÿ8Ö¦·‚0
+b
+java:S1854ñ"?Remove this useless assignment to local variable "byteBuffer_".(¯Ä¸Õıÿÿÿÿ8×¦·‚0
+S
+java:S1481ñ"0Remove this unused "byteBuffer_" local variable.(¯Ä¸Õıÿÿÿÿ8×¦·‚0
+Y	java:S125õ"<This block of commented-out lines of code should be removed.(Ù­¢8Ø¦·‚0
+I
+java:S1905‡"&Remove this unnecessary cast to "int".(¢¸õ’ıÿÿÿÿ8Ù¦·‚0
+Y	java:S125½"<This block of commented-out lines of code should be removed.(ÙŠŞŠ8Û¦·‚0
+I
+java:S1068Ù"+Remove this unused "XYSCALE" private field.(†˜„¨8İ¦·‚0
+Z
+java:S1068Û"7Remove this unused "NUM_BOXES_PER_BLOCK" private field.(“€Ö¬úÿÿÿÿ8İ¦·‚0
+|
+java:S2293ò"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ô£é­ûÿÿÿÿ8İ¦·‚0
+|
+java:S2293ƒ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤¢’Éıÿÿÿÿ8İ¦·‚0
+v
+java:S2293‰"YReplace the type specification in this constructor call with the diamond operator ("<>").(œ¦ïl8İ¦·‚0
+w
+java:S2293€"YReplace the type specification in this constructor call with the diamond operator ("<>").(”ûò¥8Ş¦·‚0
+t
+java:S1192ø"QDefine a constant instead of duplicating this literal "YoloV5Classifier" 4 times.(’î‘íıÿÿÿÿ8Ş¦·‚0
+m	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ãñş8ß¦·‚0
+s	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èë÷åüÿÿÿÿ8ß¦·‚0
+s	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Ä¸Õıÿÿÿÿ8ß¦·‚0
+n	java:S117Æ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ØÏ‡8ß¦·‚0
+s	java:S117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö¯Ğ°øÿÿÿÿ8ß¦·‚0
+n	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ş¹Å8ß¦·‚0
+n	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ÇØ¡8ß¦·‚0
+K
+java:S1604‹"(Make this anonymous inner class a lambda(ƒ†Ê÷üÿÿÿÿ8ß¦·‚0
+
+java:S1488¼"\Immediately return this expression instead of assigning it to the temporary variable "area".(È‘¿æıÿÿÿÿ8à¦·‚0
+|
+java:S1488Â"YImmediately return this expression instead of assigning it to the temporary variable "u".(äí§Šşÿÿÿÿ8à¦·‚0
+‚
+java:S1488¼"dImmediately return this expression instead of assigning it to the temporary variable "recognitions".(ùèÅ–8à¦·‚0
+b
+java:S2184´"DCast one of the operands of this subtraction operation to a "float".(³ã™8â¦·‚0
+b
+java:S2184µ"DCast one of the operands of this subtraction operation to a "float".(³õãË8â¦·‚0
+i
+java:S2095B"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(³û¢û8Ë«·‚0

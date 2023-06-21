@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/llBeforeAfterReplaced"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/dp_3"
+        android:padding="@dimen/dp_2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="@dimen/dp_10"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_edit_black_bf"
+            app:cardCornerRadius="@dimen/dp_10"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgBeforeReplaced"
+                android:layout_width="match_parent"
+                tools:src="@mipmap/defaults"
+                android:layout_gravity="center"
+                app:riv_corner_radius="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/dp_3"
+        android:padding="@dimen/dp_2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAfter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgAfterReplaced"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                app:riv_corner_radius="@dimen/dp_10"
+                android:background="@color/white"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/llQcStatus"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/bg_qc_status"
+            android:backgroundTint="@color/white_transparent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:elevation="@dimen/dp_5"
+            android:layout_margin="@dimen/dp_5"
+            app:layout_constraintTop_toTopOf="@+id/cvAfter"
+            app:layout_constraintRight_toRightOf="@+id/cvAfter">
+
+            <ImageView
+                android:id="@+id/ivQcStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/qc_arrow"
+            android:rotation="270"
+            app:tint="@color/qc_message"
+            android:visibility="gone"
+            android:elevation="6dp"
+            app:layout_constraintLeft_toLeftOf="@+id/llQcStatus"
+            app:layout_constraintRight_toRightOf="@+id/llQcStatus"
+            app:layout_constraintTop_toBottomOf="@+id/llQcStatus" />
+
+        <LinearLayout
+            android:id="@+id/llQcMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_button_ripple"
+            android:backgroundTint="@color/qc_message"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingVertical="@dimen/dp_2"
+            android:paddingHorizontal="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@+id/llQcStatus"
+            app:layout_constraintRight_toRightOf="@id/llQcStatus"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tvQcStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reshoot Required"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

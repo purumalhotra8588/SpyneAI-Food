@@ -1,0 +1,25 @@
+
+tkotlin:S6306Œ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8Â»æ¹0
+xkotlin:S6306~"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8È»æ¹0
+ykotlin:S6306Œ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8È»æ¹0
+€kotlin:S1192ß"bDefine a constant instead of duplicating this literal "Starting the service in >=26 Mode" 3 times.(óô¸üþÿÿÿÿ
+{kotlin:S1192ã"bDefine a constant instead of duplicating this literal "Starting the service in < 26 Mode" 3 times.(ËäæÇ
+<kotlin:S1874›"#Deprecated code should not be used.(ÏòÑÙ
+Akotlin:S1874²"#Deprecated code should not be used.(ôŒ¥Ïüÿÿÿÿ
+Akotlin:S1874²"#Deprecated code should not be used.(ôŒ¥Ïüÿÿÿÿ
+Akotlin:S1874×"#Deprecated code should not be used.(ù–Þ‚úÿÿÿÿ
+Akotlin:S1874×"#Deprecated code should not be used.(ù–Þ‚úÿÿÿÿ
+<kotlin:S1874Ø"#Deprecated code should not be used.(“½§à
+<kotlin:S1874Ø"#Deprecated code should not be used.(“½§à
+Akotlin:S1874Ü"#Deprecated code should not be used.(´Å€õþÿÿÿÿ
+Akotlin:S1874ß"#Deprecated code should not be used.(£Ã°ýÿÿÿÿ
+Akotlin:S1874ô"#Deprecated code should not be used.(¬ðýßûÿÿÿÿ
+<kotlin:S1874õ"#Deprecated code should not be used.(±åÛ¤
+@kotlin:S1874"#Deprecated code should not be used.(¬÷ÖÚûÿÿÿÿ
+Hkotlin:S1874×"#Deprecated code should not be used.(ù–Þ‚úÿÿÿÿ8þŸì¨Ë0
+<kotlin:S1874Ø"#Deprecated code should not be used.(“½§à
+kkotlin:S3776¸"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¿À÷Ž
+<kotlin:S6310Œ"Avoid hardcoded dispatchers.(á¥ €8è»æ¹0
+@kotlin:S6310~"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8è»æ¹0
+Akotlin:S6310Œ"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8è»æ¹0
+Lkotlin:S1066".Merge this "if" statement with the nested one.(· ‹Úþÿÿÿÿ

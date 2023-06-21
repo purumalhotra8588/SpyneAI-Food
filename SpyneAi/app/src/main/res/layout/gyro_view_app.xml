@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+            android:id="@+id/viewCamera"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tvAngleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_gyro_in"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:padding="@dimen/dp_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_13"
+                android:visibility="invisible"
+                tools:text="Angle" />
+
+            <TextView
+                android:id="@+id/tvAngleRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_gyro_error"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:padding="@dimen/dp_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_13"
+                android:visibility="invisible"
+                tools:text="45" />
+
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="viewInstructions" />
+
+        <View
+            android:id="@+id/viewInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@color/primary"
+            app:layout_constraintBottom_toBottomOf="@id/flLevelIndicator"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/flLevelIndicator" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlCapturedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/viewInstructions"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieUpArrow"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/flLevelIndicator"
+            app:layout_constraintStart_toStartOf="@+id/flLevelIndicator"
+            app:layout_constraintTop_toTopOf="@+id/flLevelIndicator"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/down_arrow" />
+
+
+        <TextView
+            android:id="@+id/tvUpcomingAngle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/gyro_error_level"
+            android:textSize="@dimen/dp_20"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/flLevelIndicator"
+            app:layout_constraintStart_toStartOf="@+id/flLevelIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/lottieUpArrow"
+            tools:text="90" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieDownArrow"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/flLevelIndicator"
+            app:layout_constraintEnd_toEndOf="@+id/flLevelIndicator"
+            app:layout_constraintStart_toStartOf="@+id/flLevelIndicator"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/down_arrow" />
+
+        <TextView
+            android:id="@+id/tvUpcomingAngle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/gyro_error_level"
+            android:textSize="@dimen/dp_20"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/lottieDownArrow"
+            app:layout_constraintEnd_toEndOf="@+id/flLevelIndicator"
+            app:layout_constraintStart_toStartOf="@+id/flLevelIndicator"
+            tools:text="90" />
+
+        <FrameLayout
+            android:id="@+id/flLevelIndicator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivAppTopLeft"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_top_left" />
+
+            <ImageView
+                android:id="@+id/ivAppBottomLeft"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="left|bottom"
+                android:src="@drawable/ic_bottom_left" />
+
+            <ImageView
+                android:id="@+id/ivGryroRing"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_gyro_ring"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llTiltDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/tvTiltDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="TILT DOWN"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieTiltDown"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_alignParentRight="true"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/tilt_up" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/llTiltUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieTiltUp"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_alignParentRight="true"
+                        android:rotation="180"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/tilt_up" />
+
+                    <TextView
+                        android:id="@+id/tvTiltUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="TILT UP"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvLevelIndicator"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_gyro_error" />
+
+
+            <ImageView
+                android:id="@+id/ivAppTopRight"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_top_right" />
+
+            <ImageView
+                android:id="@+id/ivAppBottomRight"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ic_bottom_right" />
+        </FrameLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

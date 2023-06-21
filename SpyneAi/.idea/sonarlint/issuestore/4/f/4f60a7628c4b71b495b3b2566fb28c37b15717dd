@@ -1,0 +1,34 @@
+
+lkotlin:S107§"HThis function has 10 parameters, which is greater than the 7 authorized.(öô«úÿÿÿÿ8Äİê’Õ0
+Fkotlin:S108Å")Either remove or fill this block of code.(ÈÜ×Úúÿÿÿÿ
+Fkotlin:S108È")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Mkotlin:S1172­"(Remove these unused function parameters.(½Ñ”Ôûÿÿÿÿ8Ñİê’Õ0
+Ikotlin:S1172Î"0Remove this unused function parameter "context".(¼şÍÉ
+Ikotlin:S1172¨"0Remove this unused function parameter "context".(¼şÍÉ
+Tkotlin:S1172Ï"6Use "_" instead of this unused lambda parameter "inv".(Ìö•øùÿÿÿÿ
+Vkotlin:S1172~"2Use "_" instead of these unused lambda parameters.(¿®ô·úÿÿÿÿ8Şİê’Õ0
+[kotlin:S1172"6Use "_" instead of this unused lambda parameter "inv".(Ìö•øùÿÿÿÿ8ßİê’Õ0
+Xkotlin:S1481^"4Remove this unused "updateHotspotUi" local variable.(÷Îş­üÿÿÿÿ8ıİê’Õ0
+Pkotlin:S1481]",Remove this unused "density" local variable.(ÇÌ²Úùÿÿÿÿ8ıİê’Õ0
+Jkotlin:S1481T",Remove this unused "mShader" local variable.(ÿÂŠh8ıİê’Õ0
+Okotlin:S1481S"+Remove this unused "bitmap" local variable.(ÉÚ£‰ıÿÿÿÿ8ıİê’Õ0
+ckotlin:S1481N"?Remove this unused "cameraButtonClickableState" local variable.(şµªªÿÿÿÿÿ8ıİê’Õ0
+Ikotlin:S1481ô"0Remove this unused "drawHotspot" local variable.(™Ó‘¨
+Wkotlin:S1481€">Remove this unused "bottomRightHotspotPointer" local variable.(®¥•é
+Vkotlin:S1481û"=Remove this unused "bottomLeftHotspotPointer" local variable.(’šªù
+Tkotlin:S1481ö";Remove this unused "topRightHotspotPointer" local variable.(äÈå¨
+Skotlin:S1481ñ":Remove this unused "topLeftHotspotPointer" local variable.(æ§Á°
+9kotlin:S1128	"Remove this unused import.(´Ùí8Şê’Õ0
+8kotlin:S11287"Remove this unused import.(Éÿ™H8ŸŞê’Õ0
+pkotlin:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ò•¡ôøÿÿÿÿ
+pkotlin:S117²"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(³ÈŞÏûÿÿÿÿ
+pkotlin:S117Ã"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(š‰‡ğşÿÿÿÿ
+pkotlin:S117Ì"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ç˜®äøÿÿÿÿ
+pkotlin:S117Õ"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(°øØßûÿÿÿÿ
+kkotlin:S117Ş"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(€¿š¾
+pkotlin:S117¸"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(³ÈŞÏûÿÿÿÿ
+pkotlin:S117É"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(š‰‡ğşÿÿÿÿ
+pkotlin:S117Ò"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ç˜®äøÿÿÿÿ
+pkotlin:S117Û"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(°øØßûÿÿÿÿ
+kkotlin:S117ä"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(€¿š¾
+tkotlin:S3923Ñ"[Remove this conditional structure or edit its code blocks so that they're not all the same.(¯Å›´

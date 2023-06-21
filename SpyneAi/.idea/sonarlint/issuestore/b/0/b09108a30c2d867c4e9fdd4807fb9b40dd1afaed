@@ -1,0 +1,37 @@
+
+fkotlin:S1079"HThis function has 16 parameters, which is greater than the 7 authorized.(š¾ôÅ8¤¸¯Ï0
+ekotlin:S107|"GThis function has 9 parameters, which is greater than the 7 authorized.(Ä×ì8¦¸¯Ï0
+kkotlin:S107"GThis function has 9 parameters, which is greater than the 7 authorized.(˜¬ÿ”üÿÿÿÿ8¨¸¯Ï0
+lkotlin:S107ê"HThis function has 11 parameters, which is greater than the 7 authorized.(Üµ¥×øÿÿÿÿ8©¸¯Ï0
+kkotlin:S107§"GThis function has 9 parameters, which is greater than the 7 authorized.(ÈâÅıüÿÿÿÿ8©¸¯Ï0
+kkotlin:S117;"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ï¬ç&8§ˆğƒÏ0
+qkotlin:S117<"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ıŠñ¿ûÿÿÿÿ8¤ˆğƒÏ0
+lkotlin:S117="NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¡áÒ­8¤ˆğƒÏ0
+lkotlin:S117>"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ø·ö’8¥ˆğƒÏ0
+qkotlin:S117?"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Í¤˜Çûÿÿÿÿ8¦ˆğƒÏ0
+lkotlin:S117@"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(”³ÇÕ8¦ˆğƒÏ0
+qkotlin:S117A"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ì½¥ªÿÿÿÿÿ8¦ˆğƒÏ0
+lkotlin:S117B"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(‘äúÄ8¦ˆğƒÏ0
+lkotlin:S117u"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(çˆóè8Â¸¯Ï0
+lkotlin:S117v"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ù²ˆ”8¦ˆğƒÏ0
+mkotlin:S117«"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ö†Œ¦8Ã¸¯Ï0
+lkotlin:S117¬"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ï¬ç&8§ˆğƒÏ0
+mkotlin:S117¾"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ö†Œ¦8Ã¸¯Ï0
+lkotlin:S117¿"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ï¬ç&8§ˆğƒÏ0
+lkotlin:S117À"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÿ°98§ˆğƒÏ0
+mkotlin:S117Æ"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ö†Œ¦8Ä¸¯Ï0
+lkotlin:S117Ç"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ï¬ç&8Ä¸¯Ï0
+lkotlin:S117È"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÿ°98§ˆğƒÏ0
+lkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ü¾Ó]8Ä¸¯Ï0
+rkotlin:S117¥"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¡Ûª–úÿÿÿÿ8Ä¸¯Ï0
+mkotlin:S117¨"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ôúåğ8Ä¸¯Ï0
+mkotlin:S117©"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(å½±Õ8§ˆğƒÏ0
+rkotlin:S117ª"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(‡µÌşÿÿÿÿ8§ˆğƒÏ0
+rkotlin:S117Á"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(’´İõşÿÿÿÿ8Å¸¯Ï0
+rkotlin:S117Û"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(µÔÑÏıÿÿÿÿ8Å¸¯Ï0
+rkotlin:S117Ü"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ˆÊ¥èüÿÿÿÿ8¨ˆğƒÏ0
+mkotlin:S117ú"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¦‰Ã‰8Å¸¯Ï0
+rkotlin:S117û"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¨ö¢şÿÿÿÿ8¨ˆğƒÏ0
+mkotlin:S117ü"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(©Óª8¨ˆğƒÏ0
+mkotlin:S117ƒ"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¦‰Ã‰8Å¸¯Ï0
+mkotlin:S117Š"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¦‰Ã‰8Æ¸¯Ï0

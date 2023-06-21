@@ -1,0 +1,6 @@
+
+jkotlin:S107"GThis function has 9 parameters, which is greater than the 7 authorized.(˜¬ÿ”üÿÿÿÿ8â½¡Ðµ0
+>kotlin:S1128"Remove this unused import.(ŒÖºÂþÿÿÿÿ8ã½¡Ðµ0
+jkotlin:S117I"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Žö–÷ýÿÿÿÿ
+ekotlin:S117J"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ö€˜†
+ekotlin:S117K"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ñûÇ 

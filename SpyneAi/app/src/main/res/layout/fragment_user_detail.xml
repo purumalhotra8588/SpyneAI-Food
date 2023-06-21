@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_18"
+    android:background="@drawable/bg_splash_gradient"
+    tools:context=".registration.view.ui.activity.RegistrationBaseActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/registration_base_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="190dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/tvCreateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_user_details" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sign_up_bg"
+        tools:context=".registration.view.ui.fragment.signup.RegistrationFragment">
+
+        <TextView
+            android:id="@+id/tvEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/tv_tell_us_bit_more_about_yourself"
+            android:textColor="@color/tv_user_detail_first_heading"
+            android:textSize="@dimen/sp_16" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmailId">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/tv_user_detail_name_heading"
+                    android:textColor="@color/tv_user_detail_first_heading"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enter your full name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_13" />
+
+                <LinearLayout
+                    android:id="@+id/llCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/signup_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Company Name"
+                        android:textColor="@color/tv_user_detail_first_heading"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/optional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text=" (Optional)"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enter your Company's name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Industry"
+                    android:textColor="@color/tv_user_detail_first_heading"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Select your Industry"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/select_country_login"
+                    android:textColor="@color/tv_user_detail_first_heading"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:id="@+id/counties_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_signup_edit_text"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/countryProgressBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:id="@+id/ivCountryDown"
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:src="@drawable/country_down_arrow"></ImageView>
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_bg_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="@dimen/dp_1"
+                        android:background="@drawable/bg_signup_edit_text"
+                        android:src="@drawable/ic_location_40_40"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_bg_permission_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="@dimen/dp_1"
+                        android:background="@drawable/bg_signup_edit_text"
+                        android:src="@drawable/ic_selected_permission_40_40"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvSelectCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/select_category"
+                    android:textColor="@color/tv_user_detail_first_heading"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <FrameLayout
+                    android:id="@+id/flCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/categorySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_signup_edit_text"
+                        android:gravity="center" />
+
+
+                    <ImageView
+                        android:id="@+id/ivCategoryDropDown"
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:src="@drawable/country_down_arrow"></ImageView>
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/etEnterpriseCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Enterprise Code"
+                    android:textColor="@color/tv_user_detail_first_heading"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/etReferral"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Enterprise code "
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_5"
+                    android:paddingVertical="@dimen/dp_5">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btSkip"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:visibility="gone"
+                        android:layout_marginHorizontal="@dimen/dp_5"
+                        android:layout_marginVertical="@dimen/dp_2"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_google_signup"
+                        android:elevation="@dimen/dp_5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/skip"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:backgroundTint="@null" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btContinue"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginHorizontal="@dimen/dp_5"
+                        android:layout_marginVertical="@dimen/dp_2"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_secondary_button"
+                        android:backgroundTint="@color/primary_light_dark"
+                        android:elevation="@dimen/dp_5"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:insetLeft="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:text="@string/contiune"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:backgroundTint="@null" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

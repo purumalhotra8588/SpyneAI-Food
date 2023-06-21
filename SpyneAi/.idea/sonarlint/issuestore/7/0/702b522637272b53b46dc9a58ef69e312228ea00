@@ -1,0 +1,16 @@
+
+Mkotlin:S108á")Either remove or fill this block of code.(ÍÖ¥ºÿÿÿÿÿ8ïØê¯Ï0
+Hkotlin:S1656›"/Remove or correct this useless self-assignment.(Ì£èù
+Ekotlin:S1481â"&Remove this unused "s" local variable.(Í´íx8ƒÙê¯Ï0
+]kotlin:S1481—"8Remove this unused "localCameraProvider" local variable.(Ø«æœùÿÿÿÿ8…Ùê¯Ï0
+Ukotlin:S1481“"0Remove this unused "aspectRatio" local variable.(áú½õûÿÿÿÿ8…Ùê¯Ï0
+okotlin:S1192p"PDefine a constant instead of duplicating this literal "Camera Fragment" 5 times.(ªÖ±™8£Ùê¯Ï0
+Bkotlin:S1874y"#Deprecated code should not be used.(â´í¸8¬Ùê¯Ï0
+qkotlin:S3776s"RRefactor this method to reduce its Cognitive Complexity from 80 to the 15 allowed.(ëü«8ºÙê¯Ï0
+wkotlin:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(³ÀøÂûÿÿÿÿ8»Ùê¯Ï0
+wkotlin:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(À„ô€şÿÿÿÿ8»Ùê¯Ï0
+kkotlin:S117À"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÃòŒ”ûÿÿÿÿ
+skotlin:S1186È"ZAdd a nested comment explaining why this function is empty or complete the implementation.(íìÛ
+skotlin:S1186®"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¨í÷
+xkotlin:S1186³"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ù¸š²úÿÿÿÿ
+kotlin:S1186·"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ò–ûøÿÿÿÿ8ÅÙê¯Ï0

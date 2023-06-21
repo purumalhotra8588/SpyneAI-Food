@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="blackfood">#66000000</color>
+    <color name="grey7">#99000000</color>
+    <color name="secondary">#0E0D12</color>
+    <color name="primary_dark">#223263</color>
+    <color name="black_transparent_food">#4D000000</color>
+    <color name="label_color">#0E0D12</color>
+    <color name="label_light_color">#A1A4B2</color>
+    <color name="hint_color">#94A3B8</color>
+    <color name="primary">#170F7A</color>
+    <color name="primary_light">#E4E2FB</color>
+    <color name="primary_light_dark">#4600F2</color>
+    <color name="light">#F69C4C</color>
+    <color name="dark">#c54700</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteBlur">#65FFFFFF</color>
+    <color name="fullTransparent">#00FFFFFF</color>
+    <color name="transparent">#26FFFFFF</color>
+    <color name="subcat_selection">#e6000000</color>
+    <color name="grey">#979797</color>
+    <color name="white_transparent">#CBF1F1F3</color>
+    <color name="lightgrey">#DDD8D8</color>
+    <color name="errorcolor">#F92C2C</color>
+    <color name="wappcolor">#4CAF50</color>
+    <color name="dark_blue">#3F3D56</color>
+    <color name="categories_text">#4F4F4F</color>
+    <color name="credit_deducted">#B3B1B1</color>
+    <color name="line_separator">#C4C4C4</color>
+    <color name="shimmer_background">#dddddd</color>
+    <color name="credit_success">#40CE4E</color>
+    <color name="green">#40CE4E</color>
+    <color name="zero_credits">#FF1F1F</color>
+    <color name="red">#FF1F1F</color>
+    <color name="draft_text_colour">#696969</color>
+    <color name="ongoing_text_colour">#FF7700</color>
+    <color name="available_credits">#33AF38</color>
+    <color name="black_varient">#424242</color>
+    <color name="paid_text_colour">#00680A</color>
+    <color name="paid_background">#AE4CAF50</color>
+    <color name="gyro_in_level">#1F7900</color>
+    <color name="gyro_error_level">#64FF0B0B</color>
+
+    // self serve
+    <color name="cart_button_colorGradientStart">#5465FF</color>
+    <color name="cart_button_colorGradientEnd">#8C98E5</color>
+    <color name="ll_output">#F7F7F8</color>
+    <color name="ll_previous_output">#8DDCDCDC</color>
+    <color name="use_otp">#FF7700</color>
+
+    <color name="complete_prj">#00C488</color>
+    <color name="choose_plan_text">#525262</color>
+
+
+    <color name="bg_light">#F6F7FF</color>
+
+
+</resources>

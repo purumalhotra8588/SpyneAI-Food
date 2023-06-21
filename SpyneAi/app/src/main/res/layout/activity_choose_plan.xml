@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_bg">
+
+    <TextView
+        android:id="@+id/tvCreateYour"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_65"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/choose_your_plan"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvCreateYour"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEnterprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@drawable/bg_choose_plan">
+
+                <TextView
+                    android:id="@+id/tvEnterprise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/enterprise"
+                    android:textColor="@color/choose_plan_text"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvEnterpriseDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="36dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/enterprise_plan"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvEnterprise"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEnterprise" />
+
+                <RelativeLayout
+                    android:id="@+id/rlFreeCredits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEnterpriseDetail">
+
+                    <ImageView
+                        android:id="@+id/ivCheck"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ent_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCheck"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="xxx free credits"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlApiAcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlFreeCredits">
+
+                    <ImageView
+                        android:id="@+id/ivCheck2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ent_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCheck2"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Api access"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDashboardAcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlApiAcess">
+
+                    <ImageView
+                        android:id="@+id/ivCheck3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ent_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCheck3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Dashboard Acess"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlUserManagment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlDashboardAcess">
+
+                    <ImageView
+                        android:id="@+id/ivCheck4"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ent_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCheck4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="User management"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlProjectView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="21dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/rlUserManagment"
+                    app:layout_constraintTop_toBottomOf="@+id/rlUserManagment">
+
+                    <ImageView
+                        android:id="@+id/ivCheck5"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_ent_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivCheck5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Project view"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clEnterprice"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="36dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clEnterprice"
+                android:background="@drawable/bg_choose_plan">
+
+                <TextView
+                    android:id="@+id/tvStandard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/standard"
+                    android:textColor="@color/choose_plan_text"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvStandardDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="36dp"
+                    android:text="@string/standard_plan"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="@dimen/sp_10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvStandard"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStandard" />
+
+                <RelativeLayout
+                    android:id="@+id/rlStandardFreeCredits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStandardDetail">
+
+                    <ImageView
+                        android:id="@+id/ivStandardCheck"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_std_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivStandardCheck"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="xxx free credits"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStandardApiAcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlStandardFreeCredits">
+
+                    <ImageView
+                        android:id="@+id/ivStandardCheck2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_std_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivStandardCheck2"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Api access"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSTandardDashboardAcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlStandardApiAcess">
+
+                    <ImageView
+                        android:id="@+id/ivSTandardCheck3"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_std_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivSTandardCheck3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Dashboard Acess"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStandardUserManagment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rlSTandardDashboardAcess">
+
+                    <ImageView
+                        android:id="@+id/ivStandardCheck4"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_std_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivStandardCheck4"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="User management"
+                        android:textSize="@dimen/sp_11" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="41dp"
+                        android:background="@color/line_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlStandardProjectView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="21dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/rlStandardUserManagment"
+                    app:layout_constraintTop_toBottomOf="@+id/rlStandardUserManagment">
+
+                    <ImageView
+                        android:id="@+id/ivStandardCheck5"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_std_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/ivStandardCheck5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Project view"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="36dp"
+                android:layout_marginBottom="71dp"
+                android:background="@drawable/bg_secondary_button"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/dp_5"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:clickable="false"
+                android:text="@string/get_started"
+                android:textAllCaps="false"
+                android:textColor="@color/edit_text_hint"
+                android:textSize="@dimen/sp_16"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clStandard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

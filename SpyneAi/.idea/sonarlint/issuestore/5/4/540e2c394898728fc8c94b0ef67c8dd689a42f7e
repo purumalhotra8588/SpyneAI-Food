@@ -1,0 +1,13 @@
+
+skotlin:S63069"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8»åä§0
+xkotlin:S6306s"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(š£Œúÿÿÿÿ8¼åä§0
+tkotlin:S6306”"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8½åä§0
+xkotlin:S6306D"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8½åä§0
+xkotlin:S6306v"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8½åä§0
+ykotlin:S6306—"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¿åä§0
+Bkotlin:S1481")Remove this unused "uuid" local variable.(¨¬ËÄ
+;kotlin:S63109"Avoid hardcoded dispatchers.(á¥ €8Çåä§0
+<kotlin:S6310”"Avoid hardcoded dispatchers.(á¥ €8Éåä§0
+@kotlin:S6310D"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8Êåä§0
+@kotlin:S6310v"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8Êåä§0
+Akotlin:S6310—"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8Êåä§0

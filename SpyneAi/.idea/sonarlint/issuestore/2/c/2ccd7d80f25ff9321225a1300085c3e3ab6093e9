@@ -1,0 +1,6 @@
+
+@kotlin:S11729"(Remove these unused function parameters.(“”™˜
+fkotlin:S117Ş"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Š—¼
+kkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(‚Íıçüÿÿÿÿ
+okotlin:S117E"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(÷¶Ş“üÿÿÿÿ
+Lkotlin:S1066°".Merge this "if" statement with the nested one.(âÜ¸Øüÿÿÿÿ

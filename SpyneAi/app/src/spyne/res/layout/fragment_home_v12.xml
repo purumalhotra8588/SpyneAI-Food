@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar_background"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_toolbar"
+            android:backgroundTint="@color/primary_light"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/bg_toolbar"
+                android:backgroundTint="@color/primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_60"
+            android:scaleType="fitXY"
+            android:src="@drawable/building_left"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_60"
+            android:scaleType="fitXY"
+            android:src="@drawable/building_right"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivAppLogo"
+                    android:layout_width="135dp"
+                    android:layout_height="@dimen/dp_60"
+                    android:src="@drawable/spyne_logo_ecom___home_page" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/ivSpyne"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginLeft="3dp"-->
+                <!--                    android:fontFamily="@font/poppins_semibold"-->
+                <!--                    android:text="spyne"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textSize="@dimen/sp_25" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llCredits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:src="@drawable/ic_wallet"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvCredits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp_5"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="1000 Credits">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_35"
+                    android:src="@drawable/ic_vector__1_" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChooseCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sp_18"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tvSelectedCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:id="@+id/ivCategoryDropdown"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="6dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/category_dropdown" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/llCategoryList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/home_transparent"
+        android:elevation="@dimen/dp_10"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_background"
+            android:paddingBottom="@dimen/dp_10">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvChooseCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clToolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_light">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clMainHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="110dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rlSubcatProjects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:paddingHorizontal="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/tvSubCatType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/categories_text"
+                            android:textSize="@dimen/sp_14"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="@string/vehicle_type" />
+
+                        <TextView
+                            android:id="@+id/tvSubcatProjectsViewAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/medium"
+                            android:text="@string/view_all"
+                            android:textColor="@color/primary_light_dark"
+                            android:textSize="@dimen/sp_14" />
+
+                    </RelativeLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/flVehicleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingHorizontal="@dimen/dp_15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rlSubcatProjects">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvVehicleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmerVehicleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <include layout="@layout/dashboard_categories_shimmer" />
+
+                                <include layout="@layout/dashboard_categories_shimmer" />
+
+                                <include layout="@layout/dashboard_categories_shimmer" />
+
+                                <include layout="@layout/dashboard_categories_shimmer" />
+
+                                <include layout="@layout/dashboard_categories_shimmer" />
+
+                            </LinearLayout>
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                    </FrameLayout>
+
+                    <com.github.islamkhsh.CardSliderViewPager
+                        android:id="@+id/bannerViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:padding="@dimen/dp_2"
+                        app:auto_slide_time="3"
+                        app:cardSlider_indicator="@id/bannerIndicator"
+                        app:cardSlider_otherPagesWidth="0dp"
+                        app:cardSlider_smallAlphaFactor="0.5"
+                        app:cardSlider_smallScaleFactor="0.9"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/flVehicleType"
+                        app:layout_constraintBottom_toTopOf="@+id/bannerIndicator"/>
+
+                    <com.github.islamkhsh.CardSliderIndicator
+                        android:id="@+id/bannerIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/bannerViewPager" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlYourProjects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_25"
+                        android:paddingHorizontal="@dimen/dp_15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bannerIndicator">
+
+                        <TextView
+                            android:id="@+id/tvYourProjects"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/your_project"
+                            android:textColor="@color/categories_text"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tvYourProjectsViewAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/medium"
+                            android:text="@string/view_all"
+                            android:textColor="@color/primary_light_dark"
+                            android:textSize="@dimen/sp_14" />
+
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flYourProjects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingHorizontal="@dimen/dp_15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rlYourProjects">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvNoProjectYet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/dp_2"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:elevation="@dimen/dp_3"
+                            android:visibility="gone"
+                            app:cardCornerRadius="@dimen/dp_10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="170dp"
+                                    android:layout_height="145dp"
+                                    android:layout_margin="@dimen/dp_10"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/empty_shoot" />
+
+                                <TextView
+                                    android:id="@+id/tvEmptyShoot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginHorizontal="@dimen/dp_20"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:gravity="center"
+                                    android:text="@string/capture_first_product_shoot"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp_15" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvYourProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmerYourProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <include layout="@layout/dashboard_completed_shimmer" />
+
+                                <include layout="@layout/dashboard_completed_shimmer" />
+
+                                <include layout="@layout/dashboard_completed_shimmer" />
+
+                                <include layout="@layout/dashboard_completed_shimmer" />
+
+                                <include layout="@layout/dashboard_completed_shimmer" />
+
+                            </LinearLayout>
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    </FrameLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

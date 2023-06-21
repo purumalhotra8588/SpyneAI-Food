@@ -1,0 +1,8 @@
+
+lkotlin:S6306m"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+mkotlin:S6306à"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306p"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+4kotlin:S6310m"Avoid hardcoded dispatchers.(á¥ €
+5kotlin:S6310à"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310p"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+Lkotlin:S1066Ò".Merge this "if" statement with the nested one.(â‡™‚úÿÿÿÿ

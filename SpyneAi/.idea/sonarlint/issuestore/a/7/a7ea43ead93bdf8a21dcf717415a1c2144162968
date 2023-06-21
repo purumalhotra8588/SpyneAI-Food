@@ -1,0 +1,9 @@
+
+mkotlin:S6306"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+Fkotlin:S1481º"-Remove this unused "category" local variable.(¹×¨
+Fkotlin:S1481è"-Remove this unused "category" local variable.(ªì¦è
+tkotlin:S1192½"VDefine a constant instead of duplicating this literal "Internet Connection: " 3 times.(Ë¾¿×ıÿÿÿÿ
+Akotlin:S1874"#Deprecated code should not be used.(ş†„Ôıÿÿÿÿ
+<kotlin:S1874™"#Deprecated code should not be used.(¦èõ¾
+5kotlin:S6310"Avoid hardcoded dispatchers.(á¥ €
+xkotlin:S1186à"ZAdd a nested comment explaining why this function is empty or complete the implementation.(éªÍÿÿÿÿÿ

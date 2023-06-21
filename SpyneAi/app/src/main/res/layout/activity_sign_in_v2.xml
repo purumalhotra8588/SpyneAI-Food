@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboardingv2.ui.onboarding.SignInV2Activity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signin_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/app_ic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_130"
+        android:id="@+id/ivAppLogo"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignInWithPhone"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivAppLogo"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_secondary_button"
+        android:text="@string/sign_in_with_number"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_70"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_2"
+        android:id="@+id/tvLine"
+        android:background="#E9E9E9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignInWithPhone"
+        android:layout_marginTop="@dimen/dp_40" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLine"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_gradient_button"
+        android:elevation="@dimen/dp_5">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/ic_email"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/contiune_with_email"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flGoogle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flEmail"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/bg_bordered_white_button"
+        android:elevation="@dimen/dp_5">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/ic_google"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/contiune_with_google"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDontHaveAccount"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/label_light_color"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginBottom="@dimen/dp_30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:id="@+id/tvSignup"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_8"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

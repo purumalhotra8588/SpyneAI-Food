@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabel"
+        android:text="@string/contiune_with_email"
+        android:textColor="@color/onboarding_black"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etId"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel"
+        android:background="@drawable/bg_onboarding_et"
+        android:padding="@dimen/dp_12"
+        android:hint="@string/phone_number"
+        android:textSize="@dimen/sp_16"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColorHint="@color/onboarding_hint"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etId"
+        android:text="Request OTP"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:elevation="@dimen/dp_5"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/dp_20"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_secondary_button"
+        android:textSize="@dimen/sp_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsePassword"
+        app:layout_constraintTop_toBottomOf="@id/btnRequestOtp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/use_password"
+        android:fontFamily="@font/poppins_medium"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/use_password"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llSignup"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDontHaveAccount"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/label_light_color"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginBottom="@dimen/dp_30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSignup"
+            android:text="@string/sign_up"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_8"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llSignup"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flGoogle"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/flPhone"
+            android:background="@drawable/bg_bordered_white_button"
+            android:layout_marginRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/ic_google"
+                android:layout_marginLeft="@dimen/dp_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/google"
+                android:textColor="@color/label_color"
+                android:textSize="@dimen/sp_14" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="wrap_content"
+            android:id="@+id/flPhone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/flGoogle"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/bg_bordered_white_button"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/ic_phone"
+                app:tint="#4B6EA6"
+                android:layout_marginLeft="@dimen/dp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/phone"
+                android:textColor="@color/label_color"
+                android:textSize="@dimen/sp_14" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

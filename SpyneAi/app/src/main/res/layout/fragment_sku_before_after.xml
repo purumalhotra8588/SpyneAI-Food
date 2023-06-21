@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".output.ui.SkuBeforeAfterFragment"
+    android:background="@drawable/bg_ll_output">
+
+    <FrameLayout
+        android:id="@+id/flBeforeAfter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBeforeAfter"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_15"
+        android:visibility="gone"
+        android:background="@color/ll_output"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/shimmerOutput">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/output_shimmer"></include>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llPrevious"
+            android:layout_width="42dp"
+            android:layout_height="84dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_previous_output">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_previous_output"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlNext"
+            android:layout_width="42dp"
+            android:layout_height="84dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/bg_next_output">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_previous_output"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:rotation="180"
+                android:layout_marginRight="6dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llShootName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flBeforeAfter">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SKU Name- "
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tvShootName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLength="17"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            tools:text="Gourav"
+            tools:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNoOfImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flBeforeAfter">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/sp_14"
+                android:text="No of Images- " />
+
+            <TextView
+                android:id="@+id/tvNoOfImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/poppins_medium"
+                tools:textSize="@dimen/sp_14"
+                tools:text="25" />
+
+
+        </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lvProcessing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_processing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

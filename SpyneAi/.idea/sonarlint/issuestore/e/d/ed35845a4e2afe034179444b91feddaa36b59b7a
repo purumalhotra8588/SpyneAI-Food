@@ -1,0 +1,17 @@
+
+Fkotlin:S108¡")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Mkotlin:S108")Either remove or fill this block of code.(ÍÖ¥ºÿÿÿÿÿ8š‰‡¾±0
+Ckotlin:S1172È"*Remove this unused function parameter "b".(ç¥§ª
+rkotlin:S6306÷"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(š£Œúÿÿÿÿ
+Hkotlin:S1481´"/Remove this unused "difference" local variable.(ˆ‘ÎÆ
+Hkotlin:S1481¯"/Remove this unused "difference" local variable.(ˆ‘ÎÆ
+Mkotlin:S1481¾"/Remove this unused "properties" local variable.(ŸÎ¿Åûÿÿÿÿ
+Jkotlin:S1481ó"1Remove this unused "rotatedarrow" local variable.(‰Î¹ù
+Gkotlin:S1481ï".Remove this unused "movearrow" local variable.(Éæõí
+Ikotlin:S1481ö"+Remove this unused "before" local variable.(‘“†ôıÿÿÿÿ
+pkotlin:S3776á"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(À„ô€şÿÿÿÿ
+pkotlin:S3776«"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(ì§‘ûÿÿÿÿ
+kkotlin:S117·"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÃòŒ”ûÿÿÿÿ
+5kotlin:S6310ø"Avoid hardcoded dispatchers.(©ªŸ³
+skotlin:S1186¦"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¨í÷
+skotlin:S1186©"ZAdd a nested comment explaining why this function is empty or complete the implementation.(§ïÂ

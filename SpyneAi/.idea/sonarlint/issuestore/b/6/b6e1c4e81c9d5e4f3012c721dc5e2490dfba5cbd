@@ -1,0 +1,17 @@
+
+Fkotlin:S108ğ")Either remove or fill this block of code.(µƒªûÿÿÿÿ
+Fkotlin:S108†")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S1172l".Remove this unused function parameter "skuId".(»×·„
+lkotlin:S6306n"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306r"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+mkotlin:S6306’"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+rkotlin:S6306–"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+Pkotlin:S1481Ü"2Remove this unused "positionView3" local variable.(£ë®‘ÿÿÿÿÿ
+Pkotlin:S1481Ú"2Remove this unused "positionView2" local variable.(¥êƒíúÿÿÿÿ
+Jkotlin:S1481Ø"1Remove this unused "positionView" local variable.(×šŠ„
+@kotlin:S1874:"#Deprecated code should not be used.(ø½ò‘ùÿÿÿÿ
+jkotlin:S3776l"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(»×·„
+4kotlin:S6310n"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310r"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+5kotlin:S6310’"Avoid hardcoded dispatchers.(á¥ €
+:kotlin:S6310–"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ

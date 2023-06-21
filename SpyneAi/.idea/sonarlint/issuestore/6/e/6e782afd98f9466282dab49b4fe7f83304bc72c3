@@ -1,0 +1,20 @@
+
+mkotlin:S101 "QRename class "Dynamic_layout" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(®ºàşÿÿÿÿ
+mkotlin:S101$"QRename class "Project_dialog" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(ò ±Çıÿÿÿÿ
+ekotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(•è¥š
+ekotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ñ¤Ö¤
+jkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Œ ›·úÿÿÿÿ
+jkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(”¤àĞşÿÿÿÿ
+ekotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(«½¦Û
+ekotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(õ¥îÛ
+jkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(…Ü¾Ïùÿÿÿÿ
+jkotlin:S117!"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(É†ààûÿÿÿÿ
+jkotlin:S117&"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ç èıÿÿÿÿ
+ekotlin:S117'"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Âùë
+ekotlin:S117)"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ª…¸—
+dkotlin:S117*"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(úùùh
+jkotlin:S117+"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¬„Ë¥ùÿÿÿÿ
+jkotlin:S117,"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ŸÅ“ùÿÿÿÿ
+jkotlin:S117-"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¢¤ÌŞûÿÿÿÿ
+ekotlin:S117."NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ì‘àÚ
+jkotlin:S117/"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ˆíï´úÿÿÿÿ

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_25"
+    android:background="@drawable/bg_dialog_corner">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pbClassifier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/dark"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/validating_your_image"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCropAngleDistance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivCapturedImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:riv_corner_radius="@dimen/dp_7"
+            android:scaleType="center"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCapturedOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="@dimen/dp_5"
+            app:layout_constraintDimensionRatio="1:1"
+            android:scaleType="fitCenter"
+            app:layout_constraintTop_toTopOf="@id/ivCapturedImage"
+            app:layout_constraintBottom_toBottomOf="@id/ivCapturedImage"
+            app:layout_constraintStart_toStartOf="@id/ivCapturedImage"
+            app:layout_constraintEnd_toEndOf="@id/ivCapturedImage" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llHint"
+            tools:visibility="visible"
+            android:layout_marginTop="@dimen/dp_15"
+            android:paddingHorizontal="@dimen/dp_20"
+            android:paddingVertical="@dimen/dp_10"
+            android:background="@drawable/bg_hint"
+            app:layout_constraintLeft_toLeftOf="@id/ivCapturedImage"
+            app:layout_constraintRight_toRightOf="@id/ivCapturedImage"
+            app:layout_constraintTop_toBottomOf="@id/ivCapturedImage"
+            >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:id="@+id/ivHint"
+                tools:src="@drawable/ic_classifier_warning">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvHint"
+                tools:text="Bad capture!"
+                android:layout_marginStart="@dimen/dp_10"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:id="@+id/rvClassification"-->
+        <!--        android:visibility="visible"-->
+        <!--        tools:itemCount="3"-->
+        <!--        tools:listitem="@layout/layout_hint"-->
+        <!--        android:orientation="vertical"-->
+        <!--        android:layout_marginTop="@dimen/dp_15"-->
+        <!--        app:layout_constraintLeft_toLeftOf="@id/llHint"-->
+        <!--        app:layout_constraintRight_toRightOf="@id/llHint"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/llHint" />-->
+
+
+        <LinearLayout
+            android:id="@+id/llCropContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:visibility="visible"
+            android:paddingHorizontal="@dimen/dp_30"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/llHint"
+            app:layout_constraintRight_toRightOf="@id/llHint"
+            app:layout_constraintTop_toBottomOf="@+id/llHint">
+
+            <ImageView
+                android:id="@+id/ivBlur"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                tools:src="@drawable/ic_classifier_warning" />
+
+            <TextView
+                android:id="@+id/tvBlur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                tools:text="Image is Cropped"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llExposerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:visibility="visible"
+            android:paddingHorizontal="@dimen/dp_30"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/llCropContainer"
+            app:layout_constraintTop_toBottomOf="@+id/llCropContainer">
+
+            <ImageView
+                android:id="@+id/ivExposer"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                tools:src="@drawable/ic_classifier_warning"/>
+
+            <TextView
+                android:id="@+id/tvExposer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                tools:text="Poor lights"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llFocusContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:visibility="visible"
+            android:paddingHorizontal="@dimen/dp_30"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/llExposerContainer"
+            app:layout_constraintTop_toBottomOf="@+id/llExposerContainer">
+
+            <ImageView
+                android:id="@+id/ivCrop"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                tools:src="@drawable/ic_classifier_warning"/>
+
+            <TextView
+                android:id="@+id/tvCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                tools:text="Out of the focus"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llDistanceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:visibility="visible"
+            android:paddingHorizontal="@dimen/dp_30"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/llFocusContainer"
+            app:layout_constraintTop_toBottomOf="@+id/llFocusContainer">
+
+            <ImageView
+                android:id="@+id/ivDistance"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                tools:src="@drawable/ic_classifier_warning"/>
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                tools:text="Out of the focus"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            app:layout_constraintLeft_toLeftOf="@id/llDistanceContainer"
+            app:layout_constraintRight_toRightOf="@id/llDistanceContainer"
+            app:layout_constraintTop_toBottomOf="@id/llDistanceContainer"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btReshootImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ecom"
+                android:fontFamily="@font/medium"
+                android:gravity="center"
+                android:text="Re-shoot"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_light_dark"
+                android:textSize="@dimen/sp_14" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btConfirmImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_button_ripple"
+                android:backgroundTint="@color/primary_light_dark"
+                android:elevation="@dimen/dp_5"
+                android:fontFamily="@font/medium"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

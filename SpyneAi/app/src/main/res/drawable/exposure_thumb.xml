@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <size
+                android:height="@dimen/dp_20"
+                android:width="@dimen/dp_20"
+                />
+            <solid android:color="#CFCFCF"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_camera_brightness" />
+</layer-list>

@@ -1,0 +1,12 @@
+
+lkotlin:S6306:"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+qkotlin:S6306O"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+qkotlin:S6306h"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+Ikotlin:S1481""1Remove this unused "carouselData" local variable.(ÔõãÛ
+7kotlin:S1128"Remove this unused import.(²…¿ßÿÿÿÿÿ
+2kotlin:S1128"Remove this unused import.(´Ùí
+7kotlin:S1128"Remove this unused import.(ˆîáüÿÿÿÿ
+okotlin:S37766"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(­Îúòûÿÿÿÿ
+4kotlin:S6310:"Avoid hardcoded dispatchers.(á¥ €
+9kotlin:S6310O"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+9kotlin:S6310h"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ

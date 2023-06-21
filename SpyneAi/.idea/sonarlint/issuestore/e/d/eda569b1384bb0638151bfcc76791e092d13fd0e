@@ -1,0 +1,15 @@
+
+Fkotlin:S108Ì")Either remove or fill this block of code.(ÍÖ¥ºÿÿÿÿÿ
+mkotlin:S6306µ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(ı¾¬Ú
+Pkotlin:S1135¬"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿ
+Bkotlin:S1481ı")Remove this unused "diff" local variable.(«Ÿ™ğ
+Pkotlin:S1481Ä"7Remove this unused "videoCaptureConfig" local variable.(¨Â „
+Ikotlin:S1481¥"0Remove this unused "aspectRatio" local variable.(ƒüò
+Qkotlin:S1481¸",Remove this unused "configs" local variable.(ªì¨Äûÿÿÿÿ8¹¦Üıó/
+<kotlin:S1874¨"#Deprecated code should not be used.(â´í¸
+kkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÃòŒ”ûÿÿÿÿ
+5kotlin:S6310µ"Avoid hardcoded dispatchers.(ı¾¬Ú
+skotlin:S1186“"ZAdd a nested comment explaining why this function is empty or complete the implementation.(íìÛ
+skotlin:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¨í÷
+xkotlin:S1186’"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ù¸š²úÿÿÿÿ
+xkotlin:S1186•"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ò–ûøÿÿÿÿ

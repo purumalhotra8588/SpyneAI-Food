@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/primary_light"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/bg_toolbar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBackGif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp_15"
+                android:paddingVertical="@dimen/dp_10"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvToolbar"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center_horizontal"
+                android:text="@string/invite_team"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivBackGif"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/group_58940"
+        android:layout_width="16dp"
+        android:layout_height="@dimen/dp_25"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@drawable/ic_group_58940044"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/tvinviteTeam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background" />
+
+    <!--    <View-->
+    <!--        android:id="@+id/vector"-->
+    <!--        android:layout_width="16dp"-->
+    <!--        android:layout_height="16dp"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        android:background="@drawable/ic_vector_3"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+    <TextView
+        android:id="@+id/tvinviteTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:text="Invite Your Team members"
+        android:textColor="#373B54"
+        android:textStyle="bold"
+        android:padding="@dimen/dp_4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlEnterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="36dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvinviteTeam">
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="332dp"
+            android:layout_height="44dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_signup_edit_text"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="someone@example.com"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/black"
+            android:textColorHint="@color/edit_text_hint"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btInviteLink"
+        android:layout_width="332dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/bg_invitation"
+        android:backgroundTint="@color/primary"
+        android:clickable="false"
+        android:elevation="@dimen/dp_5"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Send Invitation link"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rlEnterEmail" />
+
+
+    <TextView
+        android:id="@+id/tvMyTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:text="My Team"
+        android:visibility="gone"
+        android:textSize="@dimen/dp_12"
+        android:padding="@dimen/dp_4"
+        android:textColor="#373B54"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="@+id/btInviteLink"
+        app:layout_constraintTop_toBottomOf="@+id/btInviteLink" />
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_15"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_2"
+        android:text="@string/members"
+        android:visibility="gone"
+        android:layout_marginLeft="200dp"
+        android:textColor="#49495A"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMyTeam"
+        app:layout_constraintStart_toEndOf="@+id/tvMyTeam"
+        app:layout_constraintTop_toTopOf="@+id/tvMyTeam" />
+
+    <TextView
+        android:id="@+id/tvInviting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="@dimen/dp_4"
+        android:text="@string/start_inviting_your_teamates"
+        android:layout_marginTop="180dp"
+        android:textColor="#373B54"
+        android:textSize="@dimen/dp_12"
+        android:visibility="gone"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btInviteLink"
+        app:layout_constraintStart_toStartOf="@+id/btInviteLink"
+        app:layout_constraintTop_toBottomOf="@+id/btInviteLink" />
+
+
+    <View
+        android:id="@+id/vectorTwo"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/ic_group_496"
+        app:layout_constraintEnd_toEndOf="@+id/tvInviting"
+        app:layout_constraintStart_toStartOf="@+id/tvInviting"
+        app:layout_constraintTop_toBottomOf="@+id/tvInviting" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInviteList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dp_20"
+        android:clipToPadding="false"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMyTeam" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

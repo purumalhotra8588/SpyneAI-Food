@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient"
+    tools:context=".registration.view.ui.activity.RegistrationBaseActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/registration_base_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="190dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_registration"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateImage" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/sign_up_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSignup"
+        tools:context=".registration.view.ui.fragment.signup.RegistrationFragment">
+
+        <TextView
+            android:id="@+id/tvCreateYour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/otp_varification"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="@dimen/dp_30"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/enter_otp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreateYour" />
+
+        <LinearLayout
+            android:id="@+id/llOtp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail">
+
+            <EditText
+                android:id="@+id/etOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/ettwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etFive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+            <EditText
+                android:id="@+id/etSix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_otp_et"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="@dimen/dp_10" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:background="@drawable/bg_secondary_button"
+            android:backgroundTint="@color/primary_light_dark"
+            app:backgroundTint="@null"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llOtp" />
+
+        <LinearLayout
+            android:id="@+id/llOtpExpireTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSubmit">
+
+            <TextView
+                android:id="@+id/tvExpireLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:text="@string/did_not"
+                android:textColor="@color/otp_expire_color"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="00:30 Sec"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginBottom="179dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llOtpExpireTime">
+
+            <TextView
+                android:id="@+id/tvNotReceivedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/did_not_received_otp"
+                android:textColor="@color/otp_expire_color"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llOtpExpireTime" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:elevation="@dimen/dp_5"
+                android:clickable="false"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/resend"
+                android:textColor="@color/otp_expire_color"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:fontFamily="@font/medium"
+                android:textColor="@color/otp_expire_color"
+                android:textSize="@dimen/sp_12"
+                tools:text="(in 23 Sec)" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

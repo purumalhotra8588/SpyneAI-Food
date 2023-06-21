@@ -1,0 +1,10 @@
+
+Mkotlin:S108›")Either remove or fill this block of code.(±ί–ϋÿÿÿÿ8Εύ€Ύ±0
+tkotlin:S6306¥"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(α¥ €8ξαΖ„΅0
+skotlin:S6306E"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(α¥ €8ξαΖ„΅0
+xkotlin:S6306I"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(δΥ”ψÿÿÿÿ8ξαΖ„΅0
+qkotlin:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(λό«8υαΖ„΅0
+<kotlin:S6310¥"Avoid hardcoded dispatchers.(α¥ €8υαΖ„΅0
+;kotlin:S6310E"Avoid hardcoded dispatchers.(α¥ €8φαΖ„΅0
+@kotlin:S6310I"Avoid hardcoded dispatchers.(δΥ”ψÿÿÿÿ8φαΖ„΅0
+^kotlin:S1144"?Remove this unused private "observeupdateFootwarSubcat" method.(Δ»Η8χαΖ„΅0

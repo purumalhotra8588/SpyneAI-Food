@@ -1,0 +1,21 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(¼Øûì
+V	java:S125:"<This block of commented-out lines of code should be removed.(ö–½úÿÿÿÿ
+V	java:S125S"<This block of commented-out lines of code should be removed.(œ¨˜†øÿÿÿÿ
+E
+java:S1172«".Remove this unused method parameter "context".(Õğ³—
+_
+java:S1874­"CRemove this use of "getExternalStorageDirectory"; it is deprecated.(à—şÎúÿÿÿÿ
+F
+java:S2093³"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+T
+java:S1128"7Remove this unused import 'java.io.OutputStreamWriter'.(Ÿ“¸8¤ïñ‚0
+g	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇŞ¥Õ
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ«¬òùÿÿÿÿ
+T
+java:S35182"9Make sure "sum" can't be zero before doing this division.(¦Ö¼Ğıÿÿÿÿ
+l
+java:S2095"QUse try-with-resources or close this "AssetFileDescriptor" in a "finally" clause.(àÂºşÿÿÿÿ
+h
+java:S2095 "MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Æ­¥„ùÿÿÿÿ

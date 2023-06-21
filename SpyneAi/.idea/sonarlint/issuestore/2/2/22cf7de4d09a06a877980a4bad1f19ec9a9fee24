@@ -1,0 +1,10 @@
+
+Fkotlin:S108ù")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108›")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+mkotlin:S6306Š"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+rkotlin:S6306"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ
+Ekotlin:S1481¶"-Remove this unused "photoURI" local variable.(¤Í¦&
+9kotlin:S1128"Remove this unused import.(´Ùí8ãó¸¨Ğ0
+5kotlin:S6310Š"Avoid hardcoded dispatchers.(á¥ €
+:kotlin:S6310"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ
+skotlin:S1186®"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ë¶üÆ

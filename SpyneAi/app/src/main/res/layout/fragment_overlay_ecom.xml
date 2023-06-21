@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shootapp.ui.OverlaysFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:elevation="@dimen/dp_5"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/rlSkuName">
+
+
+            <TextView
+                android:id="@+id/tvSkuName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_edit"
+                android:fontFamily="@font/medium"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_13"
+                android:visibility="invisible"
+                tools:text="sku-name" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/llProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/viewFinder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_angles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_shoot_anlges">
+
+            <TextView
+                android:id="@+id/tvShoot"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp_13"
+                tools:text=" 1/4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llChanegSuncat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/bg_shoot_anlges">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp_13"
+                android:text="Change Subcategory" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/rvSubcategories"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSubcategories"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_110"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/llCapture"
+            android:background="@color/black"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_overlays" />
+
+    <View
+        android:id="@+id/gridVertical1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:alpha="0.5"
+        app:layout_constraintTop_toTopOf="@+id/viewFinder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFinder"/>
+
+    <View
+        android:id="@+id/gridVertical2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        app:layout_constraintTop_toTopOf="@+id/viewFinder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFinder"/>
+
+    <View
+        android:id="@+id/gridHorizontal1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewFinder"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <View
+        android:id="@+id/gridHorizontal2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:alpha="0.5"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewFinder"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupGridLines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/viewFinder"
+        app:layout_constraintRight_toRightOf="@id/viewFinder"
+        app:layout_constraintTop_toTopOf="@id/viewFinder"
+        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+        app:constraint_referenced_ids="gridVertical1,gridVertical2,gridHorizontal1,gridHorizontal2" />
+
+
+    <ImageView
+        android:id="@+id/imgOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFinder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewFinder" />
+
+    <LinearLayout
+        android:id="@+id/llCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="2dp"
+            android:src="@drawable/click_effect" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

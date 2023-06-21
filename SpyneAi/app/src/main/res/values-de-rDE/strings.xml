@@ -1,0 +1,197 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello">Willkommen!</string>
+    <string name="enter_email">E-Mail eingeben</string>
+    <string name="enter_password">Passwort eingeben</string>
+    <string name="new_to_app">Neu bei AutoFotoApp?</string>
+
+    <string name="please">Bitte anmelden, um fortzufahren</string>
+    <string name="please_signup">Bitte melden Sie sich an, um fortzufahren</string>
+    <string name="use_email">Use Email Instead</string>
+    <string name="sign_in">Anmelden mit Einmal-Passwort (OTP)</string>
+    <string name="login">Login</string>
+    <string name="login_with_password">Mit Passwort anmelden</string>
+    <string name="sign_up">Anmelden </string>
+    <string name="send_link">Send Link</string>
+    <string name="or">ODER</string>
+    <string name="by"><![CDATA[Indem du fortfährst, stimmst du unseren zu ]]></string>
+    <string name="terms">Terms &amp; Policies</string>
+    <string name="get_started">Let\'s get started</string>
+    <string name="enter">Enter the 6-digit \none time password just sent to</string>
+    <string name="did_not">Didn\'t receive the OTP?</string>
+    <string name="resend">Erneut senden</string>
+    <string name="submit_otp">OTP senden</string>
+    <string name="submit">Bestätigen</string>
+    <string name="backgrounds">Wähle Hintergrund</string>
+    <string name="before">Vorher</string>
+    <string name="after">Nach</string>
+    <string name="shoot_now">Jetzt fotografieren</string>
+    <string name="order">Order</string>
+    <string name="completed">Abgeschlossen</string>
+    <string name="total_cost">Gesamtpreis</string>
+    <string name="total_images">Total Images Clicked</string>
+    <string name="available_download">Available for download</string>
+    <string name="select_marketplace">Select Marketplace</string>
+    <string name="confirm">Bestätigen</string>
+    <string name="no_reshoot">Erneut aufnehmen</string>
+    <string name="ongoing">In Bearbeitung</string>
+    <string name="drafts">Entwürfe</string>
+    <string name="failed">Failed</string>
+    <string name="footwear">Footwear</string>
+    <string name="automobile">Fahrzeuge</string>
+    <string name="home">Home</string>
+    <string name="logout">Abmelden</string>
+    <string name="dealership">DealerShip Logo</string>
+    <string name="the_otp">The OTP is incorrect. Please try again.</string>
+    <string name="please_enter_email">Please enter a valid email Id</string>
+    <string name="api_key_razorpay">rzp_test_o5vheFMPXkCBrp</string>
+    <string name="no">Nein</string>
+    <string name="yes">Ja</string>
+    <string name="exits">Möchtest du dieses Shooting wirklich beenden?</string>
+    <string name="order_summary">Bestellübersicht</string>
+    <string name="category">Kategorie - </string>
+    <string name="total_skus">Gesamt-SKU</string>
+    <string name="selected_backgrounds">Ausgewählte Hintergründe</string>
+    <string name="dealership_logo">Händlerlogo</string>
+    <string name="top_up"><u>Guthaben aufladen</u></string>
+    <string name="buy_credits">10 Guthabean kaufen</string>
+    <string name="request_on_whatsapp">Anfrage auf WhatsApp</string>
+    <string name="select_backgrounds">Hintergründe</string>
+    <string name="select_output">Beispiel 360°-Ausgabe</string>
+    <string name="create_shoots">Ausgabe generieren</string>
+    <string name="your_images">Ihre Bilder</string>
+    <string name="processing">wird bearbeitet</string>
+
+    <string name="continues">fortsetzen</string>
+
+
+    <string name="your_360_shots">Deine Bilder sind fast fertig</string>
+    <string name="no_internet">Server antwortet nicht</string>
+    <string name="retry">Wiederholen</string>
+    <string name="skip">Überspringen</string>
+    <string name="exterior">Außenansicht</string>
+    <string name="interior">Innenansicht</string>
+
+    <string name="download_hd_images"><u>HD-Bilder herunterladen</u></string>
+    <string name="download_free"><u>Kostenlos herunterladen (mit Wasserzeichen)</u></string>
+
+    <string name="downloading...."><u>wird heruntergeladen....</u></string>
+    <string name="download_completed"><u>Download Abgeschlossen!</u></string>
+    <string name="download_failed"><u> Herunterladen fehlgeschlagen</u></string>
+
+    <string name="total_images_clicked"><u>Anzahl der Bilder</u></string>
+
+    <string name="credits_available"><u>Guthaben \nverfügbar</u></string>
+    <string name="credits_remaining">Guthaben</string>
+    <string name="top_up_2"><u>(Guthaben\n aufladen)</u></string>
+
+    <string name="sku_id"><u>SKU ID</u></string>
+
+    <string name="images"><u>Bilder</u></string>
+
+    <string name="credits"><u>Guthaben</u></string>
+
+    <string name="increase_online_sale"><u>Steigern Sie den Online-Umsatz für Ihre Produkte um \n<br />Hochladen visuell beeindruckender Bilder auf \n<br />Marktplätze
+
+</u></string>
+
+
+    hinzugefügt
+
+    <string name="forgot_password_dialog">Link erfolgreich gesendet.\n<br /> Bitte überprüfen Sie Ihre E-Mail.</string>
+
+
+    <string name="focused">Sonstiges</string>
+
+    <string name="start_new_shoot">Starte ein neues Shooting</string>
+
+    <string name="end_shoot">Shooting beenden</string>
+
+
+    <string name="sign_up_here"><b>Hier anmelden</b></string>
+
+    <string name="logout_dialog_text">Bist du sicher, dass du das willst <b>Ausloggen.</b></string>
+
+    <string name="login_here"><b>Login</b></string>
+    <string name="shoot_outdoor">Am besten &#160; <font color='#FF7700'><b>draußen</b></font>&#160;fotografieren um Spiegelungen zu vermeiden</string>
+    <string name="forgot_password">Passwort vergessen?</string>
+
+    <string name="forgot_password_mail">Geben Sie die E-Mail-Adresse ein, um Ihr Passwort zurückzusetzen. \n<br />Sie müssen möglicherweise Ihren Spam-Ordner überprüfen.</string>
+
+
+    <string name="message_no_permissions">Die App kann ohne Berechtigungen nicht funktionieren</string>
+
+
+    <string name="do_you_need_footwear_overlayes">Brauchst du Schuhüberzüge?</string>
+    <string name="project_name">Projektname</string>
+    <string name="project_name_">Projektname -</string>
+    <string name="end_project">Möchten Sie dieses Projekt wirklich beenden?</string>
+    <string name="city_">Stadt -</string>
+    <string name="new_project">Neues Projekt</string>
+
+
+    <string name="my_projcts">Meine Projekte</string>
+
+    <string name="session_expired">Sitzung abgelaufen. Bitte <b>melden Sie sich erneut</b> an.</string>
+    <string name="total_exterior_clicked">Außenaufnahmen insgesamt</string>
+
+    <string name="view_all">Alle anzeigen</string>
+
+    <string name="create_password">Passwort erstellen</string>
+    <string name="enter_business_name">Geben Sie Ihr Unternehmen/Ihren Namen ein</string>
+
+    <string name="shoot">Foto</string>
+    <string name="send_request">Anfrage versenden</string>
+
+    <string name="shoot_summary">Zusammenfassung der Aufnahmen </string>
+    <string name="select_country">Wähle dein Land</string>
+
+    <string name="already_a_user">Bereits ein %1$s Benutzer?</string>
+    <string name="new_to">Neu bei %1$s</string>
+    <string name="image_category">Bildkategorie</string>
+    <string name="additionl_settings">Zusätzliche Hinweise</string>
+    <string name="add_text_here">Text hier hinzufügen</string>
+    <string name="category_label">Kategorie:</string>
+    <string name="total_SKUs">"Gesamt-SKUs "</string>
+    <string name="describe_your_issue_or_idea">Beschreiben Sie Ihr Problem oder Ihre Idee....</string>
+    <string name="do_you_have">Haben Sie einen Vorschlag oder haben Sie einen Fehler gefunden?\n Bitte teilen Sie uns dies im Feld unten mit.</string>
+    <string name="total_images_label">Bilder insgesamt</string>
+    <string name="resume_shoot">Aufnahme fortsetzen</string>
+    <string name="contiune">Weiter</string>
+    <string name="request_to_add">Anfrage zum Hinzufügen von Guthaben</string>
+    <string name="generate_output">Ausgabe generieren</string>
+    <string name="enter_coupon_code">Haben Sie einen Empfehlungscode</string>
+
+    <string name="image_uploading_in_progess">Bild wird hochgeladen...</string>
+    <string name="active">Aktiv</string>
+    <string name="disconnected">Getrennt</string>
+    <string name="all_uploaded">Alle Bilder hochgeladen </string>
+    <string name="select_car_subcategory">Wählen Sie die Unterkategorie Ihres Autos</string>
+    <string name="no_magnato_meter">Ihr Gerät hat kein Magnetometer!\n\nBitte verwenden Sie ein anderes Mobilgerät</string>
+    <string name="language">Sprache auswählen</string>
+    <string name="change_password">Passwort Riprendi</string>
+    <string name="app_version">App-Version</string>
+    <string name="turn_off_switch">Schalten Sie es aus, \n während Sie eine langsame \n Internetverbindung haben.</string>
+    <string name="rate_this_output">Deine Bewertung:</string>
+    <string name="how_we_can_improve">Wie können wir uns verbessern?</string>
+    <string name="give_permissions">Diese Berechtigungen müssen erteilt werden, um fortzufahren..</string>
+    <string name="camera_access">Kamerazugriff</string>
+    <string name="file_and_media">Zugriff auf Dateien und Medien</string>
+    <string name="location_access">Standortzugriff</string>
+    <string name="go_to_permission_setting">Berechtigungen erteilen</string>
+    <string name="reshoot">Reshoot</string>
+    <string name="no_end_shoot">Nein, Shoot beenden</string>
+    <string name="settings">Einstellungen</string>
+    <string name="show_overlays">Überlagerungen anzeigen</string>
+    <string name="show_camera_grid">Kameraraster anzeigen</string>
+    <string name="show_gyrometer">Gyrometer anzeigen</string>
+    <string name="reclick">Êtes-vous sûr de vouloir reprendre cet angle ?</string>
+    <string name="select_to_reshoot">Aufnahmen für Neuaufnahme auswählen</string>
+    <string name="reshoot_specific">Spezifische Blickwinkel neu aufnehmen</string>
+    <string name="wallet">Brieftasche</string>
+    <string name="level_gryometer">Dein Gyrometer ist rot!\nStelle dein Telefon neu ein und klicke, wenn das Gyrometer grün wird!</string>
+    <string name="skip_image">Bist du sicher, dass du diesen Winkel\nüberspringen möchtest?</string>
+    <string name="connet_to_start_processing">Bitte verbinde dich mit dem Internet, um mit der Verarbeitung zu beginnen</string>
+    <string name="innter_connection_label">Internetverbindung: </string>
+
+</resources>

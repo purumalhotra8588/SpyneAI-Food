@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLabel"
+        android:text="@string/contiune_with_phone"
+        android:textColor="@color/onboarding_black"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etId"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel"
+        android:background="@drawable/bg_onboarding_et"
+        android:padding="@dimen/dp_12"
+        android:hint="@string/phone_number"
+        android:textSize="@dimen/sp_16"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColorHint="@color/onboarding_hint"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etId"
+        android:text="Request OTP"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:elevation="@dimen/dp_5"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/dp_20"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_secondary_button"
+        android:textSize="@dimen/sp_16"/>
+
+
+        <TextView
+            android:id="@+id/tvDontHaveAccount"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_20"
+            android:visibility="gone"
+            android:autoSizeMaxTextSize="@dimen/sp_14"
+            android:autoSizeMinTextSize="@dimen/sp_12"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/label_light_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp_70"/>
+
+
+
+
+    <TextView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_2"
+        android:id="@+id/tvLine"
+        android:background="#E9E9E9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/flGoogle"
+        app:layout_constraintTop_toBottomOf="@id/btnRequestOtp"
+        android:layout_marginTop="@dimen/dp_50" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flGoogle"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_gradient_button"
+        android:elevation="@dimen/dp_5">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/ic_email"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/contiune_with_email"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flGoogle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLine"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/bg_bordered_white_button"
+        android:elevation="@dimen/dp_5">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/ic_google"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/contiune_with_google"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

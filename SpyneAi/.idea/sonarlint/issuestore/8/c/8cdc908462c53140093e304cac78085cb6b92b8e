@@ -1,0 +1,12 @@
+
+Fkotlin:S108à")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Rkotlin:S1172"4Use "_" instead of this unused lambda parameter "v".(ºéõùÿÿÿÿ
+Rkotlin:S1172Ÿ"4Use "_" instead of this unused lambda parameter "v".(–¸ûµøÿÿÿÿ
+mkotlin:S6306­"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(ı¾¬Ú
+nkotlin:S1192¯"UDefine a constant instead of duplicating this literal "genVideoUsingMuxer: " 4 times.(¾ªæÖ
+;kotlin:S1874c"#Deprecated code should not be used.(¾ôıê
+Akotlin:S1874Ê"#Deprecated code should not be used.(üí’øÿÿÿÿ
+Akotlin:S1874Ê"#Deprecated code should not be used.(üí’øÿÿÿÿ
+pkotlin:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(ĞÀßÔúÿÿÿÿ
+5kotlin:S6310­"Avoid hardcoded dispatchers.(ı¾¬Ú
+skotlin:S1186É"ZAdd a nested comment explaining why this function is empty or complete the implementation.(®Õ·ò

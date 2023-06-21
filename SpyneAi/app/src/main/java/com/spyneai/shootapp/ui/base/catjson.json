@@ -1,0 +1,592 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": [
+    {
+      "category_id": "cat_d8R14zUNE",
+      "is_active": true,
+      "category_name": "Automobiles",
+      "enterprise_id": "TaD1VC1Ko",
+      "display_thumbnail": "spyne-cliq/category/automobiles/Automobile.png",
+      "color_code": "#DDDDE0",
+      "description": "Sedan, Hatchback & SUV",
+      "is_threeSixty": true,
+      "video_shoot" : {
+        "video_frame_selection" : true,
+        "minimum_duration" : 30,
+        "video_frames": [
+          4,
+          8
+        ]
+      },
+      "orientation": "landscape",
+      "image_categories" : [
+        "Exterior",
+        "Interior",
+        "Focus Shoot"
+      ],
+      "shoot_experience": {
+        "show_shoot_instructions": true,
+        "shoot_instructions": {
+          "title": "Title",
+          "url": "url",
+          "cta": "Next"
+        },
+        "has_subcategories": true,
+        "frame_selection" : true,
+        "frames": [
+          4,
+          8
+        ],
+        "perspective_cropping" : false,
+        "add_more_angles": false
+      },
+      "sub_categories": [
+        {
+          "prod_sub_cat_id": "prod_seY3vxhATCH",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "sub_cat_name": "Hatchback",
+          "display_thumbnail": "Whitelabel%20App%20Overlays/TN_carsnew/Sedan.png",
+          "overlays": [
+            {
+              "id": 1,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1001",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Left Side 90º",
+              "angle_name": "Left Side",
+              "frame_angle": "90",
+              "type": "Exterior",
+              "angles": 4,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/28.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "23 Jun, 2021"
+            },
+            {
+              "id": 2,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1002",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Back 180º",
+              "angle_name": "Back",
+              "frame_angle": "180",
+              "type": "Exterior",
+              "angles": 4,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/19.png",
+              "active": 1,
+              "priority": 2,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "23 Jun, 2021"
+            },
+            {
+              "id": 3,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1003",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Right Side 270º",
+              "angle_name": "Right Side",
+              "frame_angle": "270",
+              "type": "Exterior",
+              "angles": 4,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/10.png",
+              "active": 1,
+              "priority": 3,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "23 Jun, 2021"
+            },
+            {
+              "id": 4,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1004",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Front",
+              "angle_name": "Front",
+              "frame_angle": "0",
+              "type": "Exterior",
+              "angles": 4,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/1.png",
+              "active": 1,
+              "priority": 4,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "23 Jun, 2021"
+            },
+            {
+              "id": 5,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1005",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Left Front 45º",
+              "angle_name": "Left Front",
+              "frame_angle": "45",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/33.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 6,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1006",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Left Side 90º",
+              "angle_name": "Left Side",
+              "frame_angle": "90",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/28.png",
+              "active": 1,
+              "priority": 2,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 7,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1007",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Left Back 45º",
+              "angle_name": "Left Back",
+              "frame_angle": "135",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/23.png",
+              "active": 1,
+              "priority": 3,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 8,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1008",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Back 180º",
+              "angle_name": "Back",
+              "frame_angle": "180",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/19.png",
+              "active": 1,
+              "priority": 4,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 9,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1009",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Right Front 45º",
+              "angle_name": "Right Front",
+              "frame_angle": "315",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/5.png",
+              "active": 1,
+              "priority": 7,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 10,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1010",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Right Side 90º",
+              "angle_name": "Right Side",
+              "frame_angle": "270",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/10.png",
+              "active": 1,
+              "priority": 6,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 11,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1011",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Right Back 45º",
+              "angle_name": "Right Back",
+              "frame_angle": "225",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/15.png",
+              "active": 1,
+              "priority": 5,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            },
+            {
+              "id": 12,
+              "prod_cat_id": "cat_d8R14zUNE",
+              "prod_sub_cat_id": "prod_seY3vxhATCH",
+              "overlay_id": "over-1012",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Front",
+              "angle_name": "Front",
+              "frame_angle": "0",
+              "type": "Exterior",
+              "angles": 8,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/spyne-cliq/product/cars/hatchback/1.png",
+              "active": 1,
+              "priority": 8,
+              "created_at": "01 Jun, 2021",
+              "updated_at": "17 Jul, 2021"
+            }
+          ],
+          "camera_settings": {
+            "parent_id": "prod_seY3vxhATCH",
+            "show_gyro": true,
+            "show_grid": true,
+            "show_overlays": true,
+            "pitch_var": 5,
+            "pitch": [
+              0
+            ],
+            "roll_var": 10,
+            "roll": [
+              90
+            ]
+          }
+        }
+      ],
+      "interior": [
+        {
+          "id": 601,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/8.png",
+          "display_name": "Dashboard",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 602,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/7.png",
+          "display_name": "Central Dash",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 603,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/6.png",
+          "display_name": "Steering Wheel",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 604,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/5.png",
+          "display_name": "Odometer",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 605,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/4.png",
+          "display_name": "Front Passenger Door",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 606,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/3.png",
+          "display_name": "Right Rear Door",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 607,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/2.png",
+          "display_name": "Rear Seat",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 608,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/1.png",
+          "display_name": "Trunk",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        }
+      ],
+      "miscellaneous": [
+        {
+          "id": 601,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/8.png",
+          "display_name": "Dashboard",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 602,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/7.png",
+          "display_name": "Central Dash",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 603,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/6.png",
+          "display_name": "Steering Wheel",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 604,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/5.png",
+          "display_name": "Odometer",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 605,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/4.png",
+          "display_name": "Front Passenger Door",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 606,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/3.png",
+          "display_name": "Right Rear Door",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 607,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/2.png",
+          "display_name": "Rear Seat",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        },
+        {
+          "id": 608,
+          "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/frame_images_v2/Interior/1.png",
+          "display_name": "Trunk",
+          "prod_cat_id": "cat_d8R14zUNE",
+          "prod_sub_cat_id": "prod_seY3vxhATCH"
+        }
+      ],
+      "fetch_backgrounds_by" : "prodCatId",
+      "process_params": [
+        {
+          "id" : 1,
+          "default_value" : true,
+          "field_name" : "Generate 360",
+          "field_type" : "checkbox",
+          "field_id" : "is_360",
+          "is_required" : false
+        },
+        {
+          "id" : 2,
+          "default_value" : false,
+          "field_name" : "Number Plate Blur",
+          "field_type" : "checkbox",
+          "field_id" : "number_plate_blur",
+          "is_required" : false
+        },
+        {
+          "id" : 2,
+          "default_value" : false,
+          "field_name" : "Tint Window",
+          "field_type" : "checkbox",
+          "field_id" : "tint_window",
+          "is_required" : false
+        }
+      ]
+    },
+    {
+      "category_id": "cat_Ujt0kuFxX",
+      "is_active": true,
+      "category_name": "Footwear",
+      "enterprise_id": "TaD1VC1Ko",
+      "display_thumbnail": "spyne-cliq/category/footwear/Footwear.png",
+      "color_code": "#996459",
+      "description": "Men, Women & Kids",
+      "is_threeSixty": false,
+      "orientation": "portrait",
+      "image_categories" : [
+        "Footwear"
+      ],
+      "shoot_experience": {
+        "show_shoot_instructions": false,
+        "has_subcategories": true,
+        "frame_selection" : false,
+        "frames": [
+          0
+        ],
+        "perspective_cropping" : false,
+        "add_more_angles": false
+      },
+      "sub_categories": [
+        {
+          "prod_sub_cat_id": "prod_4CW50lj2sABC",
+          "prod_cat_id": "cat_Ujt0kuFxX",
+          "sub_cat_name": "Women Slippers",
+          "display_thumbnail": "Overlays/womens%20footwear/womens%20footwear/slippers/1.jpg",
+          "overlays": [{
+            "id": 7202,
+            "prod_cat_id": "cat_Ujt0kuFxX",
+            "prod_sub_cat_id": "prod_4CW50lj2sABC",
+            "overlay_id": "over-1727",
+            "enterprise_id": "TaD1VC1Ko",
+            "display_name": "Women Slippers",
+            "angle_name": "NA",
+            "frame_angle": "45",
+            "type": "Exterior",
+            "angles": 0,
+            "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/Overlays/womens%20footwear/womens%20footwear/slippers/1.png",
+            "active": 1,
+            "priority": 1,
+            "created_at": "21 Jun, 2021",
+            "updated_at": "01 Dec, 2021"
+          },
+            {
+              "id": 7203,
+              "prod_cat_id": "cat_Ujt0kuFxX",
+              "prod_sub_cat_id": "prod_4CW50lj2sABC",
+              "overlay_id": "over-1728",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Women Slippers",
+              "angle_name": "NA",
+              "frame_angle": "90",
+              "type": "Exterior",
+              "angles": 0,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/Overlays/womens%20footwear/womens%20footwear/slippers/2.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "21 Jun, 2021",
+              "updated_at": "01 Dec, 2021"
+            },
+            {
+              "id": 7204,
+              "prod_cat_id": "cat_Ujt0kuFxX",
+              "prod_sub_cat_id": "prod_4CW50lj2sABC",
+              "overlay_id": "over-1729",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Women Slippers",
+              "angle_name": "NA",
+              "frame_angle": "0",
+              "type": "Exterior",
+              "angles": 0,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/Overlays/womens%20footwear/womens%20footwear/slippers/3.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "21 Jun, 2021",
+              "updated_at": "01 Dec, 2021"
+            },
+            {
+              "id": 7205,
+              "prod_cat_id": "cat_Ujt0kuFxX",
+              "prod_sub_cat_id": "prod_4CW50lj2sABC",
+              "overlay_id": "over-1730",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Women Slippers",
+              "angle_name": "NA",
+              "frame_angle": "45",
+              "type": "Exterior",
+              "angles": 0,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/Overlays/womens%20footwear/womens%20footwear/slippers/4.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "21 Jun, 2021",
+              "updated_at": "01 Dec, 2021"
+            },
+            {
+              "id": 7206,
+              "prod_cat_id": "cat_Ujt0kuFxX",
+              "prod_sub_cat_id": "prod_4CW50lj2sABC",
+              "overlay_id": "over-1731",
+              "enterprise_id": "TaD1VC1Ko",
+              "display_name": "Women Slippers",
+              "angle_name": "NA",
+              "frame_angle": "45",
+              "type": "Exterior",
+              "angles": 0,
+              "display_thumbnail": "https://storage.googleapis.com/spyne-cliq/Overlays/womens%20footwear/womens%20footwear/slippers/5.png",
+              "active": 1,
+              "priority": 1,
+              "created_at": "21 Jun, 2021",
+              "updated_at": "01 Dec, 2021"
+            }
+          ],
+          "camera_settings": {
+            "parent_id": "prod_4CW50lj2sABC",
+            "show_gyro": true,
+            "show_grid": true,
+            "show_overlays": true,
+            "pitch_var": 5,
+            "pitch": [
+              0
+            ],
+            "roll_var": 10,
+            "roll": [
+              0,
+              90
+            ]
+          }
+        }
+      ],
+      "fetch_backgrounds_by" : "prodCatId"
+    },
+    {
+      "category_id": "cat_Ujt0kuFxA",
+      "is_active": true,
+      "category_name": "Photo Box",
+      "enterprise_id": "TaD1VC1Ko",
+      "display_thumbnail": "Whitelabel%20App%20Overlays/Thumbnail%20Images/ecommerce.png",
+      "color_code": "#EFBA72",
+      "description": "Product",
+      "is_threeSixty": false,
+      "orientation": "portrait",
+      "image_categories" : [
+        "Footwear"
+      ],
+      "shoot_experience": {
+        "show_shoot_instructions": false,
+        "has_subcategories": false,
+        "frame_selection" : false,
+        "frames": [
+          0
+        ],
+        "perspective_cropping" : true,
+        "add_more_angles": true
+      },
+      "camera_settings": {
+            "parent_id": "cat_Ujt0kuFxA",
+            "show_gyro": true,
+            "show_grid": true,
+            "show_overlays": false,
+            "pitch_var": 5,
+            "pitch": [
+              0
+            ],
+            "roll_var": 10,
+            "roll": [
+              0,
+              45,
+              90
+            ]
+       },
+        "fetch_backgrounds_by" : "prodCatId"
+    }
+  ]
+}

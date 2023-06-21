@@ -1,0 +1,12 @@
+
+fkotlin:S107Ø"GThis function has 8 parameters, which is greater than the 7 authorized.(Šè¶û8½…¾±0
+Mkotlin:S108 ")Either remove or fill this block of code.(±ß–ûÿÿÿÿ8üï…¾±0
+Mkotlin:S108ş")Either remove or fill this block of code.(±ß–ûÿÿÿÿ8ã¤†¾±0
+Mkotlin:S108¹")Either remove or fill this block of code.(±ß–ûÿÿÿÿ8éÄ†¾±0
+lkotlin:S6306^"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(‘Â¿¹
+Mkotlin:S1481Ø"4Remove this unused "videoMarkedDone" local variable.(«¬ğ¬
+9kotlin:S1128	"Remove this unused import.(´Ùí8½…¾±0
+jkotlin:S3776m"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ù¥èÒ
+fkotlin:S117É"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÏŠ½
+pkotlin:S117"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(çÌñÿÿÿÿÿ
+4kotlin:S6310^"Avoid hardcoded dispatchers.(‘Â¿¹

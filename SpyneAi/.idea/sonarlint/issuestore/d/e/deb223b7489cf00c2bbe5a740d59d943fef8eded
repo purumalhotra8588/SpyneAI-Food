@@ -1,0 +1,20 @@
+
+tkotlin:S6306—"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8 §´Ë0
+tkotlin:S6306Ú"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8¡§´Ë0
+ykotlin:S6306›"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¡§´Ë0
+ykotlin:S6306ã"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¡§´Ë0
+tkotlin:S6306ª"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €8¡§´Ë0
+ykotlin:S6306Ã"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¡§´Ë0
+ykotlin:S6306ñ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¡§´Ë0
+ykotlin:S6306õ"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¡§´Ë0
+ykotlin:S6306¸"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(äÕ”øÿÿÿÿ8¢§´Ë0
+rkotlin:S117´"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Æî³óÿÿÿÿÿ8ŞÆäÑ³0
+<kotlin:S6310—"Avoid hardcoded dispatchers.(á¥ €8­§´Ë0
+<kotlin:S6310Ú"Avoid hardcoded dispatchers.(á¥ €8­§´Ë0
+Akotlin:S6310›"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0
+Akotlin:S6310ã"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0
+<kotlin:S6310ª"Avoid hardcoded dispatchers.(á¥ €8­§´Ë0
+Akotlin:S6310Ã"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0
+Akotlin:S6310ñ"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0
+Akotlin:S6310õ"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0
+Akotlin:S6310¸"Avoid hardcoded dispatchers.(äÕ”øÿÿÿÿ8­§´Ë0

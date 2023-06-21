@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clTransactionDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/primary_light"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/tvTransactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingVertical="@dimen/dp_5"
+        android:background="@drawable/bg_date"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tvTransactionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="transactionId"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintLeft_toLeftOf="@+id/view"/>
+
+    <TextView
+        android:id="@+id/tvTransactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Consumed"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#B0BFE8"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactionId"
+        app:layout_constraintLeft_toLeftOf="@+id/view"/>
+
+
+    <TextView
+        android:id="@+id/tvCreditConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="-30 Credits"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/complete_prj"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintRight_toRightOf="@+id/view"/>
+
+    <TextView
+        android:id="@+id/tvTransactionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="12:30 Pm"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#B0BFE8"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransactionId"
+        app:layout_constraintRight_toRightOf="@+id/view"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

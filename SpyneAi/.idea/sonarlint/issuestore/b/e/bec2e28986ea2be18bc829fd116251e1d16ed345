@@ -1,0 +1,14 @@
+
+Fkotlin:S108ª")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Kkotlin:S1481"2Remove this unused "thirdFragment" local variable.(İı¬“
+Qkotlin:S1481"3Remove this unused "SecondFragment" local variable.(³ÅÜóÿÿÿÿÿ
+fkotlin:S1871Ó"MThis branch's code block is the same as the block for the branch on line 333.(ÑıŸ¤
+kkotlin:S1871ß"MThis branch's code block is the same as the block for the branch on line 333.(±ß–ûÿÿÿÿ
+Akotlin:S1874Œ"#Deprecated code should not be used.(£¹¯Çøÿÿÿÿ
+okotlin:S3776J"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(¶Á»¬şÿÿÿÿ
+pkotlin:S3776è"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ÿí¬ÿÿÿÿÿ
+pkotlin:S117"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(³ÅÜóÿÿÿÿÿ
+Okotlin:S1144ö"1Remove this unused private "startShootCm" method.(è¸îµûÿÿÿÿ
+xkotlin:S1186Ä"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÛâÁÛıÿÿÿÿ
+Fkotlin:S1066b".Merge this "if" statement with the nested one.(±ÄÀ§
+Lkotlin:S1066ª".Merge this "if" statement with the nested one.(Âèòûÿÿÿÿ

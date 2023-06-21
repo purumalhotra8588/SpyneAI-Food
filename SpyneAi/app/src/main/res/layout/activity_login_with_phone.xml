@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboardingv2.ui.onboarding.LoginWithPhoneActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvGreeting"
+        android:text="@string/hello"
+        android:textColor="@color/onboarding_black"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:textSize="@dimen/greeting_text_size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_40"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPlease"
+        app:layout_constraintTop_toBottomOf="@id/tvGreeting"
+        android:text="@string/please"
+        android:textColor="@color/label_color"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textSize="@dimen/sp_13"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:id="@+id/ivPhoneLogin"
+        app:layout_constraintTop_toBottomOf="@id/tvPlease"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/flContainer"
+        app:layout_constraintTop_toBottomOf="@id/ivPhoneLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

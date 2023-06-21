@@ -1,0 +1,39 @@
+
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§¨²×úÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ò’çÎ
+^
+java:S1874A"CRemove this use of "getExternalStorageDirectory"; it is deprecated.(Û±Ùıÿÿÿÿ
+U	java:S899L";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
+i
+java:S4042L"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
+h	java:S100k"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã²ôıÿÿÿÿ
+Q	java:S125s"<This block of commented-out lines of code should be removed.(Ùí’°
+Z
+java:S3358|"DExtract this nested ternary operation into an independent statement.(Õšª—
+_
+java:S3358}"DExtract this nested ternary operation into an independent statement.(Æ‚é¸şÿÿÿÿ
+Z
+java:S3358~"DExtract this nested ternary operation into an independent statement.(ôŞí
+r	java:S127_"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ô×±üıÿÿÿÿ
+W	java:S107ƒ"<Method has 9 parameters, which is greater than 7 authorized.(ÅÃÇ¼ûÿÿÿÿ
+g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡µ¾á
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§¨²×úÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ò’çÎ
+^
+java:S1874A"CRemove this use of "getExternalStorageDirectory"; it is deprecated.(Û±Ùıÿÿÿÿ
+U	java:S899L";Do something with the "boolean" value returned by "delete".(²Œ­ûÿÿÿÿ
+i
+java:S4042L"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(²Œ­ûÿÿÿÿ
+h	java:S100k"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã²ôıÿÿÿÿ
+Q	java:S125s"<This block of commented-out lines of code should be removed.(Ùí’°
+Z
+java:S3358|"DExtract this nested ternary operation into an independent statement.(Õšª—
+_
+java:S3358}"DExtract this nested ternary operation into an independent statement.(Æ‚é¸şÿÿÿÿ
+Z
+java:S3358~"DExtract this nested ternary operation into an independent statement.(ôŞí
+r	java:S127_"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ô×±üıÿÿÿÿ
+W	java:S107ƒ"<Method has 9 parameters, which is greater than 7 authorized.(ÅÃÇ¼ûÿÿÿÿ
+g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡µ¾á

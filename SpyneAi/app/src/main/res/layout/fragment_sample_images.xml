@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_sample_images_gradient">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llHeader"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_magic"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#5465FF"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_image"
+        android:textColor="@color/black"
+        android:id="@+id/tvChooseImage"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llHeader"/>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseImage"
+        app:layout_constraintBottom_toTopOf="@id/llLines"
+        android:layout_margin="@dimen/dp_20"
+        android:elevation="@dimen/dp_1"
+        android:background="@drawable/bg_sample_images">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvImages"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llLines"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clActions"
+        android:layout_marginBottom="@dimen/dp_25" >
+
+        <TextView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_2"
+            android:background="#E9E9E9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C9C7C7"
+            android:text="@string/or"
+            android:textSize="@dimen/sp_18"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_2"
+            android:background="#E9E9E9" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/clActions"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/dp_30"
+        android:background="@color/white"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flUpload"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/flShoot"
+            android:background="@drawable/bg_secondary_button"
+            android:layout_marginRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/ic_upload"
+                android:layout_marginLeft="@dimen/dp_20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/upload_image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flShoot"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/flUpload"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/bg_gradient_button"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/ic_shoot"
+                app:tint="@color/white"
+                android:layout_marginLeft="@dimen/dp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/shoot"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

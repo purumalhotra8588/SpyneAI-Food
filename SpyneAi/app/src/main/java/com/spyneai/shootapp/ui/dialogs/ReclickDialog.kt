@@ -1,0 +1,77 @@
+package com.spyneai.shootapp.ui.dialogs
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.spyneai.base.BaseDialogFragment
+import com.spyneai.databinding.DialogReclickBinding
+import com.spyneai.needs.AppConstants
+import com.spyneai.shootapp.data.ShootViewModelApp
+
+class ReclickDialog : BaseDialogFragment<ShootViewModelApp, DialogReclickBinding>() {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnNo.setOnClickListener {
+            dismiss()
+        }
+
+        binding.btnYes.setOnClickListener {
+            viewModel.isReclick = true
+
+            arguments?.let {
+                if (it.getString("name").toString().contains("Info")) {
+                    viewModel.categoryDetails.value?.imageType ="Info"
+                    viewModel.imageTypeInfo.value=true
+                    viewModel.currentShoot = it.getInt("position")
+                    viewModel.hideLeveler.value = true
+                    viewModel.showLeveler.value = false
+                    viewModel.showGrid.value = false
+                    viewModel.updateSelectItem.value = true
+
+                } else {
+                    when (viewModel.categoryDetails.value?.categoryId) {
+                        AppConstants.CARS_CATEGORY_ID,
+                        AppConstants.BIKES_CATEGORY_ID-> {
+                            if (it.getString("image_type").toString() == "Exterior") {
+                                viewModel.showGrid.value = viewModel.getCameraSetting().isGridActive
+                                viewModel.showLeveler.value = viewModel.getCameraSetting().isGryroActive
+                                viewModel.showOverlay.value = viewModel.getCameraSetting().isOverlayActive
+                            } else{
+                                viewModel.showLeveler.value = viewModel.getCameraSetting().isGryroActive
+                                viewModel.showOverlay.value = viewModel.getCameraSetting().isOverlayActive
+                                viewModel.showGrid.value = viewModel.getCameraSetting().isGridActive
+                                }
+
+                        }
+                        AppConstants.ECOM_CATEGORY_ID,
+                        AppConstants.FOOTWEAR_CATEGORY_ID,
+                        AppConstants.PHOTO_BOX_CATEGORY_ID,
+                        AppConstants.FOOD_AND_BEV_CATEGORY_ID-> {
+//                            viewModel.showLeveler.value = true
+                            viewModel.showGrid.value = viewModel.getCameraSetting().isGridActive
+                            viewModel.showLeveler.value = viewModel.getCameraSetting().isGryroActive
+                            viewModel.showOverlay.value = viewModel.getCameraSetting().isOverlayActive
+                        }
+                    }
+
+                    viewModel.categoryDetails.value?.imageType = it.getString("image_type").toString()
+                    viewModel.currentShoot = it.getInt("position")
+                    viewModel.overlayId = it.getInt("overlay_id")
+                    viewModel.updateSelectItem.value = true
+                }
+
+            }
+            dismiss()
+        }
+    }
+
+    override fun getViewModel() = ShootViewModelApp::class.java
+
+    override fun getFragmentBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ) = DialogReclickBinding.inflate(inflater, container, false)
+}

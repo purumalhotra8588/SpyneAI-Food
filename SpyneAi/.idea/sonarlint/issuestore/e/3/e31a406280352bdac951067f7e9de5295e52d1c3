@@ -1,0 +1,12 @@
+
+jkotlin:S107c"GThis function has 8 parameters, which is greater than the 7 authorized.(ΣΖΧ΄ϊÿÿÿÿ8―πƒΟ0
+qkotlin:S117^"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ΐγΥϊÿÿÿÿ8³πƒΟ0
+kkotlin:S117e"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(°Ρÿk8³πƒΟ0
+rkotlin:S117"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(φ–χύÿÿÿÿ8³πƒΟ0
+mkotlin:S117‘"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Φ€†8³πƒΟ0
+rkotlin:S117¬"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(φ–χύÿÿÿÿ8³πƒΟ0
+mkotlin:S117­"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Φ€†8³πƒΟ0
+mkotlin:S117®"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ρϋΗ 8³πƒΟ0
+rkotlin:S117΄"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(φ–χύÿÿÿÿ8³πƒΟ0
+mkotlin:S117µ"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Φ€†8³πƒΟ0
+mkotlin:S117¶"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(©―ΐ8³πƒΟ0

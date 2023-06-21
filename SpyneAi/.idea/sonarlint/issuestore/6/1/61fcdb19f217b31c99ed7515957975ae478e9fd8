@@ -1,0 +1,5 @@
+
+okotlin:S117B"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ßþÅïùÿÿÿÿ
+jkotlin:S117D"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(èŠ»ý
+^kotlin:S6313¤"EClasses extending "ViewModel" should not expose suspending functions.(©£ß˜
+skotlin:S3923G"[Remove this conditional structure or edit its code blocks so that they're not all the same.(úç®‹

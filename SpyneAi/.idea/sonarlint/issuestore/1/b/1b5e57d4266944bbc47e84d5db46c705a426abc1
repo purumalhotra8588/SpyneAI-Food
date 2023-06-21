@@ -1,0 +1,14 @@
+
+_kotlin:S107"GThis function has 8 parameters, which is greater than the 7 authorized.(Šè¶û
+Fkotlin:S108‡")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108ü")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108Ğ")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+^kotlin:S6307Ğ"@Use "Dispatchers.IO" to run this potentially blocking operation.(¥ßßùÿÿÿÿ
+^kotlin:S6307˜"@Use "Dispatchers.IO" to run this potentially blocking operation.(¥ßßùÿÿÿÿ
+=kotlin:S1481h"&Remove this unused "s" local variable.(Í´íx
+Rkotlin:S1481²"4Remove this unused "imageMarkedDone" local variable.(´‡ Äùÿÿÿÿ
+Rkotlin:S1481è"4Remove this unused "imageMarkedDone" local variable.(´‡ Äùÿÿÿÿ
+ekotlin:S1192Á"LDefine a constant instead of duplicating this literal "Focus Shoot" 3 times.(í¿±”
+okotlin:S3776b"RRefactor this method to reduce its Cognitive Complexity from 95 to the 15 allowed.(€ğ—ºüÿÿÿÿ
+kkotlin:S117ï"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(È´«úÿÿÿÿ
+pkotlin:S117Á"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(çÌñÿÿÿÿÿ

@@ -1,0 +1,8 @@
+
+@kotlin:S108")Either remove or fill this block of code.(‡ÚÎó
+Ykotlin:S1172]"AUse "_" instead of this unused lambda parameter "updatedRequest".(¥…“ø
+nkotlin:S1192>"ODefine a constant instead of duplicating this literal "_watermark.jpg" 4 times.(‚õíÉ8™á®õ¥0
+jkotlin:S3776|"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ì©×Ï
+okotlin:S117o"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ŽçÌñÿÿÿÿÿ
+Pkotlin:S1144n"8Remove this unused private "getUniqueIdentifier" method.(ƒÞ«´
+Tkotlin:S1144|"<Remove this unused private "downloadWithHighQuality" method.(Ì©×Ï

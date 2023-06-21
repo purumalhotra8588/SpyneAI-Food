@@ -1,0 +1,16 @@
+
+Fkotlin:S108‡")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108û")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+Fkotlin:S108Ü")Either remove or fill this block of code.(±ß–ûÿÿÿÿ
+mkotlin:S6306º"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(á¥ €
+Ÿkotlin:S1192Â"€Define a constant instead of duplicating this literal "https://spyne-static.s3.amazonaws.com/Banner/Group+58940228.png" 3 times.(Â¶‚øÿÿÿÿ
+—kotlin:S1192Å"yDefine a constant instead of duplicating this literal "https://spyne-static.s3.amazonaws.com/Banner/Banner1.png" 6 times.(ñíÙ„ıÿÿÿÿ
+™kotlin:S1192Ë"{Define a constant instead of duplicating this literal "https://spyne-static.s3.amazonaws.com/Banner/carbanner.png" 6 times.(Íö‡•ùÿÿÿÿ
+kkotlin:S1871²"MThis branch's code block is the same as the block for the branch on line 942.(È˜®Îıÿÿÿÿ
+jkotlin:S3776R"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ëü«
+kkotlin:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(À²ó
+kkotlin:S117™"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÃòŒ”ûÿÿÿÿ
+5kotlin:S6310º"Avoid hardcoded dispatchers.(á¥ €
+xkotlin:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ù¸š²úÿÿÿÿ
+xkotlin:S1186‘"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ò–ûøÿÿÿÿ
+Lkotlin:S1066õ".Merge this "if" statement with the nested one.(³¼¯õùÿÿÿÿ

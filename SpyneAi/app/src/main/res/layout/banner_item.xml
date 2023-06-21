@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBanner"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_height="150dp"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:elevation="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_ongoing_dashboard">
+
+        <ImageView
+            android:id="@+id/ivBannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

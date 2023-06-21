@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_bg"
+    android:id="@+id/JoinWorkspace">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/spyne_logo_ecom___home_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/registration_base_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="190dp"
+        android:layout_height="109dp"
+        android:layout_below="@+id/tvCreateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_registration" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="@dimen/dp_30"
+        android:background="@drawable/sign_up_bg"
+        tools:context=".registration.view.ui.fragment.signup.RegistrationFragment">
+
+        <TextView
+            android:id="@+id/tvJoinWorkspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Join your Workspace"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_container_showing_option"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_container_showing_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btSentOtp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tvEnterpriseCode"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Enterprise code "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rlEnterpriseCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="36dp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber">
+
+
+                <EditText
+                    android:id="@+id/edtEnterpriseCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="XXX XXX XXXX"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_12"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Email "
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rlEnterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="36dp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber">
+
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_signup_edit_text"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Enter your email"
+                    android:imeOptions="actionSend"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_12"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSentOtp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_secondary_button"
+            android:backgroundTint="@color/primary_light_dark"
+            app:backgroundTint="@null"
+            android:clickable="false"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Send OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+
+
+

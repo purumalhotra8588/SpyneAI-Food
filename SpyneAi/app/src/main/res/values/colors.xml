@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="text_red">#FA6E5A</color>
+    <color name="setting">#33000000</color>
+    <color name="setting_item">#00000000</color>
+    <color name="primary">#2a1fa1</color>
+    <color name="gredient_light">#6960D8</color>
+    <color name="primary_light">#572A1FA1</color>
+    <color name="black_transparent_food">#4D000000</color>
+    <color name="light">#7694ff</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#26FFFFFF</color>
+    <color name="home_transparent">#43000000</color>
+    <color name="grey">#CDCCCC</color>
+    <color name="eye_grey">#8E8D8D</color>
+    <color name="lightgrey">#DDD8D8</color>
+    <color name="errorcolor">#F92C2C</color>
+    <color name="wappcolor">#4CAF50</color>
+    <color name="credit_success">#40CE4E</color>
+    <color name="dark_blue">#3F3D56</color>
+    <color name="tint">#262424</color>
+    <color name="light_grey">#D5D5D5</color>
+    <color name="categories_text">#4F4F4F</color>
+    <color name="credit_deducted">#B3B1B1</color>
+    <color name="line_separator">#F0EEEE</color>
+    <color name="shimmer_background">#dddddd</color>
+    <color name="green">#40CE4E</color>
+    <color name="zero_credits">#FF1F1F</color>
+    <color name="red">#FF0000</color>
+    <color name="available_credits">#33AF38</color>
+    <color name="black_varient">#424242</color>
+    <color name="paid_text_colour">#00680A</color>
+    <color name="paid_background">#AE4CAF50</color>
+    <color name="gyro_in_level">#1F7900</color>
+    <color name="gyro_error_level">#64FF0B0B</color>
+    <color name="secondary">#566DED</color>
+    <color name="sub_cat_selection">#566DED</color>
+    <color name="primary_dark">#223263</color>
+    <color name="tags_title_color">#616161</color>
+    <color name="onboarding_black">#0F172A</color>
+    <color name="onboarding_hint">#94A3B8</color>
+    <color name="select_bg_border">#C4C4C4</color>
+    <color name="preference_title">#181D27</color>
+    <color name="preference_description">#ABABAB</color>
+    <color name="otp_text">#00172E</color>
+    <color name="otp_expire_color">#7B8794</color>
+    <color name="onboarding_et_stroke_color">#94A3B8</color>
+    <color name="use_password">#FF7700</color>
+    <color name="use_otp">#FF7700</color>
+    // self serve
+
+    <color name="qc_green">#1ca24a</color>
+    <color name="qc_yellow">#ffc70a</color>
+    <color name="qc_orange">#FC791A</color>
+    <color name="qc_red">#aa0602</color>
+
+    <color name="not_available">#FA6E5A</color>
+
+
+    <color name="gray_text">#99000000</color>
+    <color name="transaction_type_selected">#EFEFEF</color>
+    <color name="transaction_type_unselected">#FBFBFB</color>
+    <color name="edit_text_hint">#999696</color>
+    <color name="tv_user_detail_first_heading">#525262</color>
+    <color name="line_view">#D9D9D9</color>
+    <color name="button_background">#F6F6F6</color>
+    <color name="white_background">#FFFFFF</color>
+
+    <color name="qc_message">#CB0E0D0D</color>
+    <color name="selected_enterprise_color">#1A5465FF</color>
+    <color name="food_light_white">#0A4600F2</color>
+
+
+    <color name="enterprise_secondary_color">#2B2B2B</color>
+    <color name="clickable_text_color">#4600F2</color>
+    <color name="grey5">#50747474</color>
+
+</resources>

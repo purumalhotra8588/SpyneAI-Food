@@ -1,0 +1,34 @@
+{
+  "message": "Categories Fetched",
+  "data": [
+    {
+      "category_id": "cat_Ujt0kuFxY",
+      "category_name": "E-Commerce",
+      "category_logo": "cat_d8R14zUNE",
+      "border_color": "#A1A1A1",
+      "unselected_fill_color": "#FFFFFFFF",
+      "thumbnail": "https://spyne-static.s3.amazonaws.com/Overlays/Onboarding%20Experience/Ecomm1.png",
+      "selected_fill_color": "#6CB28E",
+      "priority":1
+    },
+    {
+      "category_id": "cat_Ujt0kuFxF",
+      "category_name": "Food",
+      "category_logo": "cat_d8R14zUNE",
+      "border_color": "#A1A1A1",
+      "unselected_fill_color": "#FFFFFFFF",
+      "thumbnail": "https://spyne-static.s3.amazonaws.com/Overlays/Onboarding%20Experience/Food1.png",
+      "selected_fill_color": "#FEB18F",
+      "priority":2
+    },
+    {
+      "category_id": "cat_Ujt0kuFxX",
+      "category_name": "Footwear",
+      "border_color": "#A1A1A1",
+      "unselected_fill_color": "#FFFFFFFF",
+      "thumbnail": "https://spyne-static.s3.amazonaws.com/Overlays/Onboarding%20Experience/Footwear_1.png",
+      "selected_fill_color": "#7583CA",
+      "priority":3
+    }
+  ]
+}

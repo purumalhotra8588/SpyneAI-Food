@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/rectangleNew"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="@dimen/dp_5"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:elevation="@dimen/dp_5"
+        android:layout_width="295dp"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/profileTab"
+        android:layout_width="275dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/backgroundpref"
+        android:clickable="true"
+        android:elevation="@dimen/dp_8"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:elevation="@dimen/dp_8"
+        android:layout_margin="@dimen/dp_10"
+        android:backgroundTint="@color/primary_light"
+        android:src="@drawable/ic_profile_vector"
+        android:background="@drawable/oval_category_selected"
+        app:layout_constraintStart_toStartOf="@+id/profileTab"
+        app:layout_constraintTop_toTopOf="@+id/profileTab"/>
+
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dp_3"
+        android:singleLine="true"
+        android:elevation="@dimen/dp_8"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:textColor="#373B54"
+        app:layout_constraintStart_toStartOf="@+id/ivProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfileImage" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvbusiness"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/poppins_regular"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#373B54"-->
+<!--        android:elevation="@dimen/dp_8"-->
+<!--        android:textSize="@dimen/dp_10"-->
+<!--        android:text="@string/business"-->
+<!--        android:visibility="gone"-->
+<!--        android:padding="@dimen/dp_5"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tvname"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvname"-->
+<!--        tools:ignore="SpUsage" />-->
+
+
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:elevation="@dimen/dp_8"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/profileTab" />
+
+    <TextView
+        android:id="@+id/my_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/my_team"
+        android:elevation="@dimen/dp_8"
+        android:visibility="gone"
+        android:padding="@dimen/dp_5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_8"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginStart="@dimen/dp_10"
+        android:textColor="#373B54"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/dp_2"
+        android:visibility="gone"
+        android:elevation="@dimen/dp_8"
+        android:textColor="#49495A"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintStart_toStartOf="@+id/my_team"
+        app:layout_constraintTop_toBottomOf="@+id/my_team" />
+
+
+    <TextView
+        android:id="@+id/tvmanage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/manage"
+        android:elevation="@dimen/dp_8"
+        android:padding="@dimen/dp_8"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:textColor="#0A9268"
+        android:contextClickable="true"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/my_team"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintTop_toTopOf="@+id/my_team" />
+
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:elevation="@dimen/dp_8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4" />
+
+    <TextView
+        android:id="@+id/myWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_8"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="My Wallet"
+        android:textColor="#373B54"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_5" />
+
+    <TextView
+        android:id="@+id/walletCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:elevation="@dimen/dp_8"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5"
+        android:text="3124 credits"
+        android:textColor="#49495A"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/myWallet"
+        app:layout_constraintTop_toBottomOf="@+id/myWallet"
+        tools:ignore="Deprecated,TextViewEdits" />
+
+    <View
+        android:id="@+id/group_58941"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_2"
+        android:elevation="@dimen/dp_8"
+        android:background="@drawable/ic_wallet"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
+        android:layout_marginBottom="@dimen/dp_30"
+        app:layout_constraintStart_toEndOf="@+id/myWallet"
+        app:layout_constraintTop_toTopOf="@+id/myWallet"
+        tools:ignore="MissingConstraints" />
+
+
+    <View
+        android:id="@+id/rectangle_6"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="@dimen/dp_8"
+        android:background="@drawable/rectangle_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_5" />
+
+    <TextView
+        android:id="@+id/my_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5"
+        android:elevation="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="App Version &amp; Release"
+        android:textColor="#373B54"
+        android:textSize="13sp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_6"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_6" />
+
+    <TextView
+        android:id="@+id/tvAappVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:elevation="@dimen/dp_8"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5"
+        android:text="Version 3.24"
+        android:textColor="#49495A"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_6"
+        app:layout_constraintStart_toStartOf="@+id/my_app_version"
+        app:layout_constraintTop_toBottomOf="@+id/my_app_version"
+        tools:ignore="Deprecated,TextViewEdits" />
+
+
+    <View
+        android:id="@+id/LogoutContainer"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:elevation="@dimen/dp_8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_6" />
+
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:elevation="@dimen/dp_8"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:text="@string/logout_new"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textColor="#49495A"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="@+id/LogoutContainer"
+        app:layout_constraintStart_toStartOf="@+id/LogoutContainer"
+        app:layout_constraintTop_toTopOf="@+id/LogoutContainer" />
+
+    <View
+        android:id="@+id/group_58940"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_5"
+        android:elevation="@dimen/dp_8"
+        android:background="@drawable/ic_group_58940026"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLogout"
+        app:layout_constraintStart_toEndOf="@+id/tvLogout"
+        app:layout_constraintTop_toTopOf="@+id/tvLogout"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

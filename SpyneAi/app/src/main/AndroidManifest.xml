@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spyneai">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <queries>
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <meta-data
+        android:name="com.google.mlkit.vision.DEPENDENCIES"
+        android:value="ocr" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="false"
+        android:fullBackupOnly="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_ic"
+        android:label="@string/app_name"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_ic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m">
+
+        <activity android:name=".activity.SearchCategoryActivity"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:exported="false"/>
+
+        <activity
+            android:name=".credits.TransactionWalletActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+
+        <activity
+            android:name=".registration.view.ui.activity.ChoosePlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registration.view.ui.activity.RegistrationBaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginsignup.activity.SignInV3Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".dashboard.ui.ChooseRIDActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".trybackground.TryBackgroundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".onboardingv2.ui.onboarding.SignInV3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".singleimageprocessing.ui.SingleImageClickPortraitActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".singleimageprocessing.ui.SingleImageClickActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".onboardingv2.ui.intro.ImageProcessingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingv2.ui.intro.SampleImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingv2.ui.onboarding.SignUpV2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".onboardingv2.ui.onboarding.LoginInWithEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reshoot.ui.ReshootRequestsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onboardingv2.ui.onboarding.LoginWithPhoneActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onboardingv2.ui.onboarding.SignInV2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dashboard.ui.MainDashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <activity
+            android:name=".shootapp.ui.base.ProjectDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".processedimages.ui.ProcessedPagedImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".orders.ui.activity.SkuPagedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".RoomTestActivity" />
+        <activity
+            android:name=".orders.ui.JoinInvitation"
+            android:exported="false" />
+
+        <activity
+            android:name=".reshoot.ui.ReshootPortraitActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".reshoot.ui.ReshootDoneActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reshoot.ui.SelectImagesActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".draft.ui.DraftSkuDetailsActivity"
+            android:exported="true" />
+        <activity android:name=".orders.ui.activity.ShowRawImagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".processedimages.ui.ProcessedImageActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"/>
+
+        <activity
+            android:name=".shootapp.ui.base.ShootPortraitActivity"
+            android:configChanges="screenLayout|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".shootapp.ui.ecomwithgrid.ShowSkuProjectActivity" />
+        <activity
+            android:name=".shootapp.ui.base.ProcessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".shoot.ui.ShootActivity"></activity> -->
+
+        <activity
+            android:name=".loginsignup.activity.ForgotPasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginsignup.activity.SignUpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginsignup.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".credits.FeedbackActivity"
+            android:screenOrientation="portrait" />
+
+
+        <service
+            android:name=".imagesdowloading.ImageDownloadingService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".singleimageprocessing.data.SingleImageDownloadingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".service.StartReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.OrderSummary2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DownloadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onboardingv2.ui.intro.ChooseCategoryActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.DataSyncService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".service.ExplicitConnectionReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name=".activity.OrderSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignInUsingOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".orders.ui.MyOrdersActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+        <activity
+            android:name=".orders.ui.MyOrdersActivity"
+            android:screenOrientation="portrait" />
+
+
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/api_key_razorpay" /> <!-- <provider -->
+        <!-- android:name="com.iceteck.silicompressorr.provider.GenericFileProvider" -->
+        <!-- android:authorities="${applicationId}.AUTH_SILI_COMPRESS" -->
+        <!-- android:exported="false" -->
+        <!-- tools:replace="android:authorities" /> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".loginsignup.data.MySMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            tools:ignore="Instantiatable"
+            tools:node="merge" />
+    </application>
+
+</manifest>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".credits.fragments.TransactionWalletFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_toolbar"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="@dimen/dp_15"
+            android:paddingVertical="@dimen/dp_10"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:text="@string/wallet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSubscriptionPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        android:visibility="visible"
+        android:background="@drawable/bg_gradient_button"
+        app:layout_constraintTop_toBottomOf="@+id/llToolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dollor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome User!!"
+            android:layout_margin="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvPlanCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlan"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlanState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlanCredit"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlanRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlanCredit"
+            app:layout_constraintLeft_toRightOf="@+id/tvPlanState" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:id="@+id/btContactUs"
+            android:visibility="gone"
+            android:text="Contact Us"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/bg_contact_us"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlanRange"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llCalenderFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_skip"
+        app:layout_constraintTop_toBottomOf="@+id/clSubscriptionPlan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp_20">
+
+
+        <LinearLayout
+            android:id="@+id/llStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/dp_8"
+           android:background="@drawable/bg_start_date">
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Start Date"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:src="@drawable/ic_arrow_right" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:clickable="false"
+            android:background="@drawable/bg_end_date">
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="End Date"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="#F5F5F5"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/ic_calendar" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/llTransactionTypeFilter"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_skip"
+        app:layout_constraintTop_toTopOf="@+id/llCalenderFilter"
+        app:layout_constraintRight_toRightOf="@+id/clSubscriptionPlan">
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_filter_slider" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llTransactionTypeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/transparent"
+        android:elevation="@dimen/dp_2"
+        android:padding="@dimen/dp_2"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/llTransactionTypeFilter"
+        app:layout_constraintTop_toBottomOf="@+id/llTransactionTypeFilter">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp_7"
+            android:elevation="@dimen/dp_7"
+            android:padding="@dimen/dp_5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTransactionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="4"
+                android:visibility="visible"
+                tools:listitem="@layout/item_transaction_type"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tvRecentTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        app:layout_constraintTop_toBottomOf="@+id/llCalenderFilter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginHorizontal="@dimen/dp_15">
+    </TextView>
+
+
+
+    <LinearLayout
+        android:id="@+id/llTransactionHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_20"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecentTransaction"
+        android:background="@drawable/bg_transaction">
+
+
+
+        <LinearLayout
+            android:id="@+id/llNoTransactionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginVertical="@dimen/dp_150"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#B0BFE8"
+                android:textSize="@dimen/sp_14"
+                android:text="No transaction data found!"></TextView>
+
+
+
+            
+        </LinearLayout>
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerTransaction"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+                <include layout="@layout/item_transaction_shimmer" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="15"
+            android:visibility="gone"
+            tools:listitem="@layout/item_transaction"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTopDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Today"
+        android:paddingHorizontal="@dimen/dp_20"
+        android:paddingVertical="@dimen/dp_5"
+        android:background="@drawable/bg_date"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/llTransactionHolder"
+        app:layout_constraintRight_toRightOf="@+id/llTransactionHolder"
+        app:layout_constraintTop_toTopOf="@+id/llTransactionHolder"
+        app:layout_constraintBottom_toTopOf="@+id/llTransactionHolder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

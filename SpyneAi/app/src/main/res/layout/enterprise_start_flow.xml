@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_bg"
+    android:id="@+id/EnterpriseStartFlow">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/spyne_logo_ecom___home_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCreateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/registration_base_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/ivSignup"
+        android:layout_width="245dp"
+        android:layout_height="185dp"
+        android:layout_below="@+id/tvCreateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_registration" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sign_up_bg">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_secondary_button"
+            android:backgroundTint="@color/primary_light_dark"
+            app:backgroundTint="@null"
+            android:clickable="false"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Create your Account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/clFlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            app:constraint_referenced_ids="view1, tvOR, view2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreateAccount" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line_view" />
+
+        <TextView
+            android:id="@+id/tvOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/or"
+            android:textAllCaps="false"
+            android:textColor="@color/edit_text_hint"
+            android:textSize="@dimen/sp_12"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line_view"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSignIn"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/bg_google_signup"
+            android:clickable="false"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Sign in to your Account"
+            android:textAllCaps="false"
+            android:textColor="@color/enterprise_secondary_color"
+            android:textSize="@dimen/sp_12"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/tvCreateAccount"
+            app:layout_constraintStart_toStartOf="@+id/tvCreateAccount"
+            app:layout_constraintTop_toBottomOf="@+id/clFlow" />
+
+        <LinearLayout
+            android:id="@+id/llSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btSignIn">
+
+
+            <TextView
+                android:id="@+id/tvAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Have an Enterprise code?"
+                android:textAllCaps="false"
+                android:textColor="@color/enterprise_secondary_color"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvClickHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Click Here"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_light_dark"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+

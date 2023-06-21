@@ -1,0 +1,88 @@
+package com.spyneai.draft.data
+
+import android.util.Log
+import androidx.paging.PagingSource
+import androidx.paging.PagingState
+import androidx.room.withTransaction
+import com.google.gson.Gson
+import com.spyneai.app.BaseApplication
+import com.spyneai.base.network.ProjectApi
+import com.spyneai.isInternetActive
+import com.spyneai.base.room.SpyneAppDatabase
+import com.spyneai.shootapp.repository.model.sku.Sku
+
+import retrofit2.HttpException
+import java.io.IOException
+
+class SkuDataSource(
+    private val service: ProjectApi,
+    val SpyneAppDatabase: SpyneAppDatabase,
+    val projectId: String?,
+    val projectUuid : String,
+    val videoData : Int
+) : PagingSource<Int, Sku>() {
+
+    val TAG = "SkuDataSource"
+
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Sku> {
+        val page = params.key ?: 0
+        Log.d(TAG, "load: "+page)
+
+        return try {
+            if (projectId != null && BaseApplication.getContext().isInternetActive()){
+                val response = service.getPagedSku(
+                    pageNo = page,
+                    projectId = projectId,
+                    videoData = videoData
+                )
+
+                val prevKey = if (page == 0) null else page - 1
+                val nextKey = if (response.data.isNullOrEmpty()) null else page + 1
+
+                SpyneAppDatabase.withTransaction {
+                    val ss = SpyneAppDatabase.skuDao().insertSkuWithCheck(response.data,projectUuid,projectId)
+                    Log.d(TAG, "load: ${Gson().toJson(ss)}")
+                }
+
+                val finalResponse = SpyneAppDatabase.skuDao().getSkusWithLimitAndSkip(
+                    offset = page.times(10),
+                    projectUuid = projectUuid
+                )
+
+                LoadResult.Page(
+                    finalResponse,
+                    prevKey = prevKey,
+                    nextKey = nextKey
+                )
+            }else{
+                val response = SpyneAppDatabase.skuDao().getSkusWithLimitAndSkip(
+                    offset = page.times(10),
+                    projectUuid = projectUuid
+                )
+
+                val prevKey = if (page == 0) null else page - 1
+                val nextKey = if (response.isNullOrEmpty()) null else page + 1
+
+
+                LoadResult.Page(
+                    response,
+                    prevKey = prevKey,
+                    nextKey = nextKey
+                )
+            }
+        } catch (exception: IOException) {
+            return LoadResult.Error(exception)
+        } catch (exception: HttpException) {
+            return LoadResult.Error(exception)
+        }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, Sku>): Int? {
+        return state.anchorPosition?.let { anchorPosition ->
+            state.closestPageToPosition(anchorPosition)?.prevKey?.plus(1)
+                ?: state.closestPageToPosition(anchorPosition)?.nextKey?.minus(1)
+        }
+    }
+
+
+}

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".output.ui.OutputFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/primary_light"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:backgroundTint="@color/primary"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/bg_toolbar"
+            app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBackGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/dp_10"
+        android:paddingHorizontal="@dimen/dp_15"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/back"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_vertical"
+        android:text="@string/output_toolbar"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_alignParentRight="true"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+
+
+        <TextView
+            android:id="@+id/tvCartCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_cart_count"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_medium"
+            tools:text="12" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/dp_5"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bold"
+                android:gravity="center_vertical"
+                android:text="@string/output_toolbar"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tvTotalSHootCaptured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textSize="@dimen/sp_14"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/total_shoot_captured"
+        android:textColor="#354044"/>
+
+    <TextView
+        android:id="@+id/tvTotalShoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_background"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textSize="@dimen/sp_14"
+        android:fontFamily="@font/poppins_regular"
+        tools:text="50"
+        android:textColor="#354044"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/clProgress"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalSHootCaptured"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical"/>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp_20"
+       android:paddingVertical="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView"
+        app:layout_constraintBottom_toTopOf="@+id/llButtonOutput">
+
+        <TextView
+            android:id="@+id/tvProcessingOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processing Output"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="99 %"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressBar"
+            app:trackThickness="6sp"
+            app:trackColor="@color/grey5"
+            app:indicatorColor="@color/primary_light_dark"
+            android:layout_width="0dp"
+            android:max="300"
+            android:layout_height="wrap_content"
+            app:indicatorSize="80dp"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_5"
+            app:layout_constraintBottom_toTopOf="@+id/llTimer"
+            app:layout_constraintLeft_toRightOf="@+id/tvPercentage"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+
+        <LinearLayout
+            android:id="@+id/llTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/dp_20"
+            app:layout_constraintBottom_toTopOf="@+id/tvYouCanView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tvTimerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated time- "
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="05:00 min"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvYouCanView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can view your progress in project section"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_40"
+            app:layout_constraintBottom_toTopOf="@id/tvYouWillBe"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tvYouWillBe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will be redirected to homepage in 10 seconds"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_13"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llButtonOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="20dp"
+        android:visibility="invisible"
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_ll_output"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btNextShoot"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:text="@string/next_shoot"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/bg_next_shoot"
+            android:textSize="@dimen/sp_16"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btEndShoot"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
+            android:text="@string/end_shoot"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:elevation="@dimen/dp_5"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/bg_add_to_cart"
+            android:textSize="@dimen/sp_16"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">¡Saludos!</string>
+
+        <string name="please">Por favor inicie sesión para continuar</string>
+        <string name="please_signup">Regístrese para continuar</string>
+        <string name="use_email">Utilice el correo electrónico en su lugar</string>
+        <string name="sign_in">Iniciar sesión con OTP</string>
+        <string name="login">Acceso</string>
+        <string name="login_with_password">Iniciar sesión con contraseña</string>
+        <string name="sign_up">Inscribirse</string>
+        <string name="send_link">Enviar enlace</string>
+        <string name="or">O</string>
+        <string name="by"><![CDATA[Al continuar, acepta nuestro ]]></string>
+        <string name="terms">Condiciones</string>
+    <string name="get_started">Empecemos</string>
+        <string name="enter">Ingresa el código de 6 dígitos enviado a</string>
+        <string name="did_not">¿No recibiste la OTP?</string>
+        <string name="resend">reenviar</string>
+        <string name="submit_otp">Enviar OTP</string>
+        <string name="submit">Enviar</string>
+    <string name="backgrounds">Antecedentes</string>
+    <string name="before">Antes</string>
+        <string name="after">Después</string>
+        <string name="shoot_now">Dispara ahora</string>
+        <string name="order">Pedido</string>
+    <string name="completed">Terminado</string>
+    <string name="total_cost">Coste total</string>
+        <string name="total_images">Imágenes totales en las que se hizo clic</string>
+        <string name="available_download">Disponible para descarga</string>
+        <string name="select_marketplace">Seleccionar mercado</string>
+        <string name="confirm">Confirmar</string>
+        <string name="no_reshoot">volver a disparar</string>
+    <string name="ongoing">En curso</string>
+        <string name="drafts">Borradores</string>
+        <string name="failed">Ha fallado</string>
+    <string name="footwear">Calzado</string>
+        <string name="automobile">Automóvil</string>
+        <string name="home">Casa</string>
+        <string name="logout">Cerrar sesión</string>
+        <string name="dealership">ConcesionarioBuque Logotipo</string>
+    <string name="the_otp">La OTP es incorrecta. Inténtalo de nuevo.</string>
+        <string name="please_enter_email">Ingrese una identificación de correo electrónico válida</string>
+    <string name="api_key_razorpay">rzp_test_o5vheFMPXkCBrp</string>
+    <string name="no">No</string>
+        <string name="yes">sí</string>
+    <string name="exits">¿Estás seguro de que quieres salir de esta sesión?</string>
+    <string name="order_summary">Resumen del pedido</string>
+        <string name="category">Categoría -</string>
+        <string name="total_skus">SKU totales</string>
+        <string name="selected_backgrounds">Fondos seleccionados</string>
+        <string name="dealership_logo">Logotipo del concesionario</string>
+        <string name="top_up"><u> Completar</u>  </string>
+        <string name="buy_credits">Compra 10 créditos</string>
+        <string name="request_on_whatsapp">Solicitud en WhatsApp</string>
+    <string name="select_backgrounds">Seleccione Fondo</string>
+        <string name="select_output">Ejemplo de salida de 360°</string>
+        <string name="create_shoots">Generar salida</string>
+    <string name="your_images">Tus Imágenes</string>
+        <string name="processing">Procesando</string>
+
+    <string name="continues">Continuar</string>
+
+
+        <string name="your_360_shots">Tus imágenes están casi listas</string>
+        <string name="no_internet">Servidor no responde</string>
+        <string name="retry">Rever</string>
+    <string name="skip">Saltar</string>
+    <string name="exterior">Exterior</string>
+        <string name="interior">Interior</string>
+
+    <string name="download_hd_images"><u> Descargar imágenes de alta definición</u>  </string>
+        <string name="download_free"><u> Descargar gratis (marca de agua)</u>  </string>
+
+        <string name="downloading...."><u> Descargando....</u>  </string>
+        <string name="download_completed">Descarga completa</string>
+        <string name="download_failed"><u> Descarga fracasó</u>  </string>
+
+        <string name="total_images_clicked"><u> Imágenes totales en las que se hizo clic</u>  </string>
+
+        <string name="credits_available"><u> Créditos Disponibles</u>  </string>
+        <string name="top_up_2"><u> (Completar)</u>  </string>
+
+        <string name="sku_id"><u> ID de SKU</u>  </string>
+
+        <string name="images"><u> Imágenes</u>  </string>
+
+        <string name="credits"><u> Créditos</u>  </string>
+
+        <string name="increase_online_sale"><u> Aumente las ventas en línea de sus productos en \n<br/>uploading visually stunning images on \n<br/>Marketplaces
+
+</u>  </string>
+
+
+    <string name="forgot_password_dialog">Enlace enviado con éxito.\n<br>  </br> Por favor revise su correo electrónico.</string>
+
+
+    <string name="focused">Diverso</string>
+
+        <string name="start_new_shoot">Iniciar una nueva sesión</string>
+
+    <string name="end_shoot">Finalizar disparo</string>
+
+
+    <string name="sign_up_here"><b> Registrate aquí</b>  </string>
+
+        <string name="logout_dialog_text">Estás seguro que quieres<b> cerrar sesión.</b>  </string>
+
+        <string name="login_here"><b> Entre aquí</b>  </string>
+        <string name="shoot_outdoor">Disparo<font color="#FF7700">  <b>Outdoors</b></font> para evitar reflejos irregulares</string>
+        <string name="forgot_password">¿Se te olvidó tu contraseña?</string>
+
+        <string name="forgot_password_mail">Ingrese la dirección de correo electrónico para restablecer su contraseña. \norte<br>  </br> Es posible que deba revisar su carpeta de correo no deseado.</string>
+
+
+    <string name="message_no_permissions">La aplicación no puede funcionar sin permisos.</string>
+
+
+    <string name="do_you_need_footwear_overlayes">¿Necesitas cubrecalzado?</string>
+    <string name="project_name">Nombre del proyecto</string>
+        <string name="project_name_">Nombre del proyecto -</string>
+        <string name="end_project">¿Está seguro de que desea finalizar este proyecto?</string>
+    <string name="city_">Ciudad -</string>
+        <string name="new_project">Nuevo proyecto</string>
+
+
+    <string name="my_projcts">Mis proyectos</string>
+
+        <string name="session_expired">Sesión expirada. Por favor<b> iniciar sesión</b> otra vez.</string>
+    <string name="total_exterior_clicked">Imágenes exteriores totales</string>
+
+    <string name="view_all">Ver todo</string>
+
+    <string name="enter_coupon_code">Tener algún código de referencia</string>
+
+        <string name="enter_email">Ingrese correo electrónico</string>
+        <string name="enter_password">Introducir la contraseña</string>
+        <string name="new_to_app">Nuevo en SpyneAI</string>
+        <string name="create_password">Crear contraseña</string>
+        <string name="enter_business_name">Ingrese el negocio/su nombre</string>
+
+        <string name="shoot">Disparo</string>
+        <string name="credits_remaining">Créditos restantes</string>
+    <string name="send_request">Enviar petición</string>
+    <string name="shoot_summary">Resumen del rodaje</string>
+    <string name="select_country">Selecciona tu pais</string>
+
+        <string name="already_a_user">¿Ya eres un usuario de %1$s?</string>
+        <string name="new_to">Nuevo en %1$s</string>
+    <string name="image_category">Categoría de imagen</string>
+        <string name="additionl_settings">Notas adicionales</string>
+        <string name="add_text_here">Añadir texto aquí</string>
+
+    <string name="category_label">Categoría :</string>
+    <string name="total_SKUs">"SKU totales"</string>
+    <string name="describe_your_issue_or_idea">Describa su problema o idea....</string>
+        <string name="do_you_have">¿Tiene alguna sugerencia o encontró algún error?\nHáganoslo saber en el campo a continuación.</string>
+        <string name="total_images_label">Imágenes totales</string>
+        <string name="resume_shoot">Reanudar disparo</string>
+    <string name="contiune">Continuar</string>
+        <string name="request_to_add">Solicitud para agregar créditos</string>
+        <string name="generate_output">Generar salida</string>
+    <string name="image_uploading_in_progess">Subida de imagen en curso...</string>
+    <string name="active">Activo</string>
+        <string name="disconnected">Desconectado</string>
+    <string name="innter_connection_label">Conexión a Internet:</string>
+        <string name="all_uploaded">Todas las imágenes cargadas</string>
+    <string name="select_car_subcategory">Selecciona la subcategoría de tu coche</string>
+        <string name="no_magnato_meter">¡Su dispositivo no tiene magnetómetro!\n\nUtilice otro dispositivo móvil</string>
+        <string name="reclick">¿Seguro que quieres volver a fotografiar este ángulo?</string>
+        <string name="select_to_reshoot">Seleccionar disparos para volver a disparar</string>
+        <string name="reshoot_specific">Retomar ángulos específicos</string>
+
+        <string name="language">Idioma</string>
+
+        <string name="select_language">Seleccione el idioma</string>
+        <string name="change_password">Cambia la contraseña</string>
+        <string name="app_version">Version de aplicacion</string>
+    <string name="turn_off_switch">Desactívala mientras tengas una \nconexión a Internet lenta.</string>
+        <string name="wallet">Billetera</string>
+        <string name="level_gryometer">¡Tu girómetro está rojo!\n¡Reajusta tu teléfono y haz clic cuando el girómetro se ponga verde!</string>
+        <string name="skip_image">¿Seguro que quieres\nsaltar este ángulo?</string>
+        <string name="rate_this_output">Califique esta salida:</string>
+
+    <string name="how_we_can_improve">¿Como podemos mejorar?</string>
+    <string name="give_permissions">Estos permisos deben otorgarse para continuar.</string>
+        <string name="camera_access">Acceso a la cámara</string>
+        <string name="file_and_media">Acceso a archivos y medios</string>
+        <string name="location_access">Acceso a la ubicación</string>
+        <string name="go_to_permission_setting">Dar permisos</string>
+        <string name="shoot_info">Disparar imagen de información</string>
+        <string name="no_end_shoot">No, finaliza la sesión</string>
+        <string name="want_to_capture_info_image">¿Quieres capturar la imagen de información?</string>
+        <string name="crop_your_image">Recorta tu imagen</string>
+        <string name="reshoot">volver a disparar</string>
+        <string name="crop">Cultivo</string>
+        <string name="clocked_in_for">Registrado para</string>
+    <string name="near_location">Parece que no estás cerca de la ubicación. Por favor, compruebe la ubicación que ha seleccionado.</string>
+    <string name="images_saved">Tus imágenes están guardadas</string>
+        <string name="connet_to_start_processing">Conéctese a Internet para comenzar a procesar</string>
+        <string name="settings">Configuración</string>
+        <string name="show_overlays">Mostrar superposiciones</string>
+        <string name="show_camera_grid">Mostrar cuadrícula de cámara</string>
+        <string name="show_gyrometer">Mostrar girómetro</string>
+
+
+    // new onboarding
+    <string name="email_or_phone">Correo electrónico o número de teléfono</string>
+        <string name="continue_with">Iniciar sesión con correo electrónico/teléfono</string>
+        <string name="signup_with">Regístrese con correo electrónico/teléfono</string>
+        <string name="business_name">Nombre comercial /Su nombre</string>
+    <string name="password">Clave</string>
+        <string name="otp_instead">Utilice OTP en su lugar</string>
+        <string name="change_bg">Cambiar el fondo</string>
+        <string name="my_account">Mi cuenta</string>
+        <string name="make_changes_to_account">Haz cambios en tu cuenta</string>
+        <string name="attendance">Asistencia</string>
+        <string name="mark_attendance">Marque su asistencia aquí</string>
+    <string name="already_have_account">ya tengo una cuenta</string>
+    <string name="type_of_products">¿Qué tipo de productos\nvende su empresa?</string>
+        <string name="choose_one">Elija uno por ahora, puede explorar otros más tarde.</string>
+        <string name="sign_in_with_number">Iniciar sesión con número de teléfono</string>
+        <string name="contiune_with_email">Continuar con el correo electrónico</string>
+        <string name="dont_have_account">¿No tienes una cuenta?</string>
+        <string name="contiune_with_google">continuar con google</string>
+        <string name="contiune_with_phone">Continuar con Teléfono/Correo electrónico</string>
+        <string name="phone_number">Número de teléfono/Correo electrónico</string>
+        <string name="google">Google</string>
+    <string name="phone">Teléfono</string>
+        <string name="use_password">Usar contraseña en su lugar</string>
+        <string name="sign_up_small">Inscribirse</string>
+        <string name="sign">INICIAR SESIÓN</string>
+        <string name="few_more_details">Algunos detalles más</string>
+        <string name="create_magic">Ahora intenta crear magia con</string>
+        <string name="choose_image">Elija una imagen para continuar o disparar</string>
+        <string name="upload_image">Subir</string>
+
+    <string name="dialog_permission_title">Se requiere permiso</string>
+        <string name="dialog_permission_default_message">Mensaje predeterminado</string>
+        <string name="dialog_permission_button_positive">OK</string>
+    <string name="download">Descargar</string>
+
+
+        //self serve
+        <string name="next_shoot"><b> Próxima sesión</b>  </string>
+
+    //vin number
+
+
+    // strings v12(swiggy debug)
+    <string name="your_project"><b> Tus proyectos:</b>  </string>
+    <string name="vehicle_type"><b> Tipo de vehiculo</b>  </string>
+
+        <!-- Generated by Automatic String Resource Translation -->
+        <!--          https://asrt.gluege.boerde.de             -->
+</resources>

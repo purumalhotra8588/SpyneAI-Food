@@ -1,0 +1,123 @@
+package com.spyneai.adapter
+
+import android.content.Context
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.spyneai.R
+import com.spyneai.dashboard.response.CatAgnosticResV2
+import com.spyneai.needs.AppConstants
+import com.spyneai.needs.Utilities
+
+
+public class CategoriesDashboardAdapter(
+    val context: Context,
+    var categoriesResponseList: ArrayList<CatAgnosticResV2.CategoryAgnos>,
+    val btnlistener: BtnClickListener
+)
+    : RecyclerView.Adapter<CategoriesDashboardAdapter.ViewHolder>() {
+
+    companion object {
+        var mClickListener: BtnClickListener? = null
+    }
+
+    open interface BtnClickListener {
+        fun onBtnClick(position: Int)
+    }
+    /**
+     * Provide a reference to the type of views that you are using
+     * (custom ViewHolder).
+     */
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val flCategories: FrameLayout = view.findViewById(R.id.flCategories)
+        val llCategories: LinearLayout = view.findViewById(R.id.llCategories)
+        val tvCategoryName: TextView = view.findViewById(R.id.tvCategoryName)
+        val imgCategory: ImageView = view.findViewById(R.id.imgCategory)
+    }
+
+    // Create new views (invoked by the layout manager)
+    override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
+        // Create a new view, which defines the UI of the list item
+
+        val view = LayoutInflater.from(viewGroup.context)
+                .inflate(R.layout.row_categories_dashboard, viewGroup, false)
+
+/*
+        return ViewHolder(view).listen { pos, type ->
+            val item = items.get(pos)
+            //TODO do other stuff here
+        }
+*/
+        return ViewHolder(view)
+
+    }
+
+    // Replace the contents of a view (invoked by the layout manager)
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+
+        // Get element from your dataset at this position and replace the
+        // contents of the view with that element
+        /*  if (categoriesResponseList[position].displayName.equals("Footwear")
+                  || categoriesResponseList[position].displayName.equals("Automobiles") ) {*/
+
+        val splittedName = categoriesResponseList[position].name.split(" ")
+
+        viewHolder.tvCategoryName.text =    when{
+            splittedName.isNullOrEmpty() ||
+                    splittedName.size == 1
+            -> categoriesResponseList[position].name
+            splittedName.size == 2 -> splittedName[0]+"\n"+splittedName[1]
+            splittedName.size == 3 -> splittedName[0]+"\n"+splittedName[1]+" "+splittedName[2]
+            else -> categoriesResponseList[position].name
+        }
+
+
+
+
+        Glide.with(context).load(
+            if(categoriesResponseList[position].displayThumbnail.contains("https")){
+                categoriesResponseList[position].displayThumbnail
+            }else{
+                if(categoriesResponseList[position].displayThumbnail.contains("spyne-cliq"))
+                    AppConstants.BASE_IMAGE_URL_FOOD + categoriesResponseList[position].displayThumbnail
+                else
+                    AppConstants.BASE_IMAGE_URL + categoriesResponseList[position].displayThumbnail
+            }
+        )
+            .into(viewHolder.imgCategory)
+
+       // viewHolder.imgCategory.setBackgroundColor(Color.parseColor(categoriesResponseList[position].colorCode))
+
+//        if (categoriesResponseList[position].active == 1){
+//            viewHolder.flCategories.alpha = 1.0F
+//        }else{
+//            viewHolder.flCategories.alpha = 0.5F
+//        }
+
+        mClickListener = btnlistener
+        viewHolder.flCategories.setOnClickListener(View.OnClickListener {
+            Log.e("ok", "Ok way" + position)
+            if (mClickListener != null)
+                Utilities.savePrefrence(context, AppConstants.CATEGORY_NAME, categoriesResponseList[position].name)
+                mClickListener?.onBtnClick(position)
+        })
+    }
+
+    // Return the size of your dataset (invoked by the layout manager)
+    override fun getItemCount() =
+        categoriesResponseList.size
+
+    fun <T : RecyclerView.ViewHolder> T.listen(event: (position: Int, type: Int) -> Unit): T {
+        itemView.setOnClickListener {
+            event.invoke(getAdapterPosition(), getItemViewType())
+        }
+        return this
+    }
+}

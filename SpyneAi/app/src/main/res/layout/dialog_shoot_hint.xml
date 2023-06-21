@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="@dimen/dp_15"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tv_message"
+        android:fontFamily="@font/medium"
+        android:textSize="@dimen/sp_13"
+        android:text="@string/shoot_outdoor"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/ivBeforeShootGif"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
+        android:layout_margin="@dimen/dp_10"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/tv_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        ></ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btContinue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBeforeShootGif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/continues"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/medium"
+        android:textSize="@dimen/sp_13"
+
+        android:background="@drawable/bg_rectangle_button_ripple"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

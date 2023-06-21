@@ -1,0 +1,12 @@
+
+lkotlin:S6306u"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(α¥ €
+lkotlin:S6306`"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(α¥ €
+qkotlin:S6306z"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(δΥ”ψÿÿÿÿ
+qkotlin:S6306e"TUsing "GlobalScope" here leads to the breaking of structured concurrency principles.(δΥ”ψÿÿÿÿ
+4kotlin:S6310u"Avoid hardcoded dispatchers.(α¥ €
+4kotlin:S6310`"Avoid hardcoded dispatchers.(α¥ €
+9kotlin:S6310z"Avoid hardcoded dispatchers.(δΥ”ψÿÿÿÿ
+9kotlin:S6310e"Avoid hardcoded dispatchers.(δΥ”ψÿÿÿÿ
+^kotlin:S6313‹"EClasses extending "ViewModel" should not expose suspending functions.(φ¦ΦΉ
+ckotlin:S6313"EClasses extending "ViewModel" should not expose suspending functions.(ιθΎωÿÿÿÿ
+^kotlin:S6313"EClasses extending "ViewModel" should not expose suspending functions.(ΥΡ±

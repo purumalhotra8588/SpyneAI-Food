@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "transactionType": "Deducted",
+      "transactionId": "deduction",
+      "priority":4
+    },
+    {
+      "transactionType": "Allocated",
+      "transactionId": "allocation",
+      "priority":1
+    },
+    {
+      "transactionType": "Consumed",
+      "transactionId": "consumption",
+      "priority":2
+    },
+    {
+      "transactionType": "Purchased",
+      "transactionId": "purchase",
+      "priority":3
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardV2.ui.activity.MainV2Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:id="@+id/flContainer" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFloatingShootMenu"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:elevation="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_100"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/dp_8"
+            android:background="@drawable/bg_shoot_menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/iv360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dp_24"
+                android:src="@drawable/ic_video"
+                app:tint="@color/white" />
+
+            <View
+                android:id="@+id/view360"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_24"
+                android:background="@color/light_grey" />
+
+            <ImageView
+                android:id="@+id/ivProductShoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_24"
+                android:src="@drawable/ic_cataloging_shoot"
+                app:tint="@color/white" />
+
+            <View
+                android:id="@+id/viewUpload"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/light_grey" />
+
+            <ImageView
+                android:id="@+id/ivUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_24"
+                android:src="@drawable/ic_upload"
+                app:tint="@color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="3dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:background="@drawable/nav_background">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            app:menu="@menu/dashboard_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Animation.Design.BottomSheetDialog"
+            app:labelVisibilityMode="labeled">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        app:backgroundTint="@color/primary_light_dark"
+        android:src="@drawable/plus"
+        android:visibility="visible"
+        app:tint="@android:color/white"
+        app:layout_anchor="@id/bottomAppBar"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

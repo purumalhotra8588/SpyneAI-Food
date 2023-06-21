@@ -1,0 +1,10 @@
+
+Fkotlin:S108È")Either remove or fill this block of code.(ÍÖ¥ºÿÿÿÿÿ
+Vkotlin:S1481á"8Remove this unused "localCameraProvider" local variable.(Ø«æœùÿÿÿÿ
+<kotlin:S1874•"#Deprecated code should not be used.(â—Ñ
+pkotlin:S3776¸"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(³ÀøÂûÿÿÿÿ
+kkotlin:S117‡"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÃòŒ”ûÿÿÿÿ
+skotlin:S1186Ò"ZAdd a nested comment explaining why this function is empty or complete the implementation.(§ïÂ
+skotlin:S1186ö"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¨í÷
+xkotlin:S1186ú"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ù¸š²úÿÿÿÿ
+xkotlin:S1186þ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Ò–ûøÿÿÿÿ

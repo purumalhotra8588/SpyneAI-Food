@@ -1,0 +1,10 @@
+
+^kotlin:S11726"ARemove this unused function parameter "registrationDataFragment".(¢ùÿÿÿÿ
+2kotlin:S1128"Remove this unused import.(ŠëÙ 
+1kotlin:S1128"Remove this unused import.(†™¹$
+okotlin:S3776?"RRefactor this method to reduce its Cognitive Complexity from 45 to the 15 allowed.(¬é‘Êûÿÿÿÿ
+jkotlin:S117L"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(—ÜÁí
+okotlin:S117q"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(È¡êêúÿÿÿÿ
+kkotlin:S117¾"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(¯ÿÄé
+pkotlin:S117ˆ"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ø²¾Óşÿÿÿÿ
+rkotlin:S117€"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ç®§‚8ÊÂ‰†Ï0
