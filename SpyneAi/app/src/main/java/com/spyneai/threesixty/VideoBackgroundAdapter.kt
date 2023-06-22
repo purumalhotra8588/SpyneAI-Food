@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.spyneai.R
@@ -23,9 +25,9 @@ class VideoBackgroundAdapter(val context: Context,
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val ivBackground: ImageView = view.findViewById(R.id.ivBackground)
-        val clMain: ConstraintLayout = view.findViewById(R.id.clMain)
-        val tvBgName: TextView = view.findViewById(R.id.tvBgName)
+        val ivCarBackground: ImageView = view.findViewById(R.id.ivCarBackground)
+        val llChannel: LinearLayout = view.findViewById(R.id.llChannel)
+        val tvCarBgName: TextView = view.findViewById(R.id.tvCarBgName)
     }
 
 
@@ -38,31 +40,40 @@ class VideoBackgroundAdapter(val context: Context,
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         Glide.with(context).load(channelList[position].imageUrl)
             .thumbnail(Glide.with(context).load(R.drawable.placeholder_gif))
-            .into(viewHolder.ivBackground)
+            .into(viewHolder.ivCarBackground)
         try {
             val list: List<String> = channelList[position].bgName.trim().split("\\s+".toRegex())
             if (list.size == 1)
-                viewHolder.tvBgName.text = list[0]
+                viewHolder.tvCarBgName.text = list[0]
             else
-                viewHolder.tvBgName.text = list[0] + " " + list[1]
+                viewHolder.tvCarBgName.text = list[0] + " " + list[1]
         } catch (e: Exception) { }
 
 
         mClickListener = btnlistener
 
 
-        if (position == pos)
-            viewHolder.clMain.setBackgroundResource(R.drawable.bg_selected)
-        else
-            viewHolder.clMain.setBackgroundResource(R.drawable.bg_channel)
+        if (position == pos) {
+            viewHolder.llChannel.setBackgroundResource(R.drawable.bg_selected)
+            viewHolder.tvCarBgName.setTextColor(ContextCompat.getColor(viewHolder.itemView.context, R.color.primary_light_dark))
+        }
+        else {
+            viewHolder.llChannel.setBackgroundResource(R.drawable.bg_channel)
+            viewHolder.tvCarBgName.setTextColor(
+                ContextCompat.getColor(
+                    viewHolder.itemView.context,
+                    R.color.black
+                )
+            )
+        }
 
-        viewHolder.clMain.setOnClickListener(View.OnClickListener {
+        viewHolder.llChannel.setOnClickListener(View.OnClickListener {
             if (mClickListener != null)
                 mClickListener?.onBtnClick(position)
 
             pos = position
 
-            viewHolder.clMain.setBackgroundResource(R.drawable.bg_selected)
+            viewHolder.llChannel.setBackgroundResource(R.drawable.bg_selected)
         })
     }
 

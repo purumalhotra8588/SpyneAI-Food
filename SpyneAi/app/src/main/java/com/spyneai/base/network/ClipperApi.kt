@@ -620,7 +620,7 @@ interface ClipperApi {
                 BaseApplication.getContext(),
                 AppConstants.AUTH_KEY
             ).toString(),
-        @Query("appType") appType : String = "non_auto"
+        @Query("appType") appType : String = "food"
     ): FetchCategoryRes
 
 
