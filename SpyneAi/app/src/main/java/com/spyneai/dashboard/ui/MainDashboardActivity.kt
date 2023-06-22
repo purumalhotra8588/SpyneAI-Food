@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.Keep
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -224,18 +225,18 @@ class MainDashboardActivity : BaseActivity() {
         }
 
 
-        binding.bottomNavigation.setOnItemSelectedListener {
-            when (it.itemId) {
+        binding.bottomNavigation.setOnNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
                 R.id.homeDashboardFragment -> {
                     showHomeFragment()
                 }
-
                 R.id.completedOrdersFragment -> {
                     showProjectFragment()
                 }
             }
             true
         }
+
 
 
         Log.d(TAG, "onCreate: $tab_id")
